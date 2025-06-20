@@ -1,0 +1,16 @@
+Nombre;Apellido;DNI;Categoria
+Juan;Pérez;12345678;Platino
+Ana;Pérez;23456789;
+Sergio;Pérez;34567890;
+María;Gómez;87654321;Oro
+Miguel;Gómez;98765432;
+Carlos;López;11223344;Plata
+María;López;22334455;Oro
+José;García;33445566;Platino
+Ana;Martínez;44332211;Platino
+Luis;Ramírez;55667788;Oro
+Sofía;Castro;99887766;Plata
+Pedro;Alvarez;12312312;Platino
+Laura;Martínez;32132132;Oro
+Javier;Lopez;45645645;Plata
+Claudia;Reyes;78978978;Platino

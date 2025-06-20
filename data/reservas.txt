@@ -1,0 +1,8 @@
+CodReserva;DNIPasajero;NroVuelo;FechaReserva;EstadoReserva
+1;12345678;1001;AA123;Confirmada
+1;23456789;1001;AA123;Confirmada
+1;34567890;1001;AA123;Confirmada
+2;12345678;1002;AA123;Confirmada
+2;87654321;1002;AA123;Cancelada
+3;12345678;1003;AA123;Confirmada
+4;87654321;1004;AA123;Cancelada

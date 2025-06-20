@@ -1,0 +1,7 @@
+CódigoAeronave;Zona;AsientoInicial;AsientoFinal
+LV085;1;1;20
+LV085;2;21;40
+LV085;3;41;60
+LV123;1;1;18
+LV123;2;19;36
+LV123;3;37;54

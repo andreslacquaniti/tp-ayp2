@@ -1,0 +1,4 @@
+Matricula;Asientos;CapacidadCarga;VolumenCarga
+LV085;180;2000;100
+LV123;150;1800;120
+LV456;200;2500;150

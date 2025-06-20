@@ -1,0 +1,7 @@
+Destino;Peso;Volumen
+MDQ;1500;2.5
+IGR;1200;3.0
+MDZ;1000;2.5
+MDQ;2000;4.0
+MDQ;2500;3.5
+MDQ;1800;2.8

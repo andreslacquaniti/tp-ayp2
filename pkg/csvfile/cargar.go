@@ -11,7 +11,7 @@ import (
 
 // CargaCSV lee un CSV en filename usando el delimiter dado y devuelve []T.
 func CargaCSV[T any](filename string) ([]T, error) {
-	file, err := os.Open(filename)
+	file, err := os.Open("data/" + filename)
 	if err != nil {
 		return nil, err
 	}

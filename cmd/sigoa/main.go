@@ -2,129 +2,87 @@ package main
 
 import (
 	"fmt"
+	"sigoa/internal/app"
+	"sigoa/internal/checkin"
+	"sigoa/internal/models"
+	"sigoa/internal/vuelo"
 	"time"
-
-	"github.com/Santy-J/sigoa/internal/app"
-	"github.com/Santy-J/sigoa/internal/checkin"
-	"github.com/Santy-J/sigoa/internal/models"
 )
 
 func main() {
-	// Load data from CSV files
-	aeropuertos, err := app.LoadAeropuertos("data/aeropuertos.txt")
-	if err != nil {
-		fmt.Println("Error loading airports:", err)
+
+	app.Init()     // Inicializa la aplicación y carga los datos necesarios
+	checkin.Init() // Carga las reservas y clientes para el sistema de check-in
+
+	go IniciarControlDeVuelos()
+	// Obtengo el listado de vuelos
+	vuelos := vuelo.GetVuelos()
+	if len(vuelos) == 0 {
+		fmt.Println("❌ No se encontraron vuelos.")
 		return
 	}
 
-	vuelos, err := app.LoadVuelos("data/vuelos.txt")
-	if err != nil {
-		fmt.Println("Error loading flights:", err)
-		return
-	}
-
-	aeronaves, err := app.LoadAeronaves("data/aeronaves.txt")
-	if err != nil {
-		fmt.Println("Error loading aircrafts:", err)
-		return
-	}
-
-	clientes, err := app.LoadClientes("data/clientes.txt")
-	if err != nil {
-		fmt.Println("Error loading clients:", err)
-		return
-	}
-
-	reservas, err := app.LoadReservas("data/reservas.txt")
-	if err != nil {
-		fmt.Println("Error loading reservations:", err)
-		return
-	}
-
-	configuracionAsientos, err := app.LoadConfiguracionAsientos("data/configuracion_asientos.txt")
-	if err != nil {
-		fmt.Println("Error loading seat configuration:", err)
-		return
-	}
-
-	edificios, err := app.LoadEdificios("data/edificios.txt")
-	if err != nil {
-		fmt.Println("Error loading buildings:", err)
-		return
-	}
-
-	cargas, err := app.LoadCargas("data/cargas.txt")
-	if err != nil {
-		fmt.Println("Error loading cargo:", err)
-		return
-	}
-
-	// Initialize the check-in system
-	checkinSystem := checkin.NewCheckinSystem(vuelos, clientes, reservas, configuracionAsientos, buildings)
-
-	// Simulate passenger check-in for a specific flight (example)
-	flightNumber := "AR123"
-	flight, found := checkinSystem.FindFlight(flightNumber)
-	if !found {
-		fmt.Printf("Flight %s not found.\n", flightNumber)
-		return
-	}
-
-	fmt.Printf("Starting check-in simulation for flight %s...\n", flightNumber)
-
-	// Simulate passengers arriving and queuing
-	passengerQueue := make(chan models.Reservation)
-	go func() {
-		for _, reservation := range reservations {
-			if reservation.FlightCode == flightNumber {
-				passengerQueue <- reservation
-				time.Sleep(time.Duration(reservation.ArrivalTime) * time.Millisecond) // Simulate arrival time
+	for _, v := range vuelos {
+		app.Wg.Add(1)
+		go func() {
+			defer app.Wg.Done()
+			vueloDetalle := vuelo.GetVuelo(v.Numero)
+			// Simula la espera hasta que el check-in esté abierto y no haya pendiente de salida
+			for {
+				if vueloDetalle.GetEstado() == "CheckIn" {
+					fmt.Printf("✅ Check-in abierto para el vuelo %s\n", vueloDetalle.Vuelo.Numero)
+					go simulaCheckIn(vueloDetalle.Vuelo)
+					break
+				}
+				time.Sleep(100 * time.Millisecond)
 			}
-		}
-		close(passengerQueue)
-	}()
+		}()
 
-	// Simulate check-in counters
-	numCounters := 3 // Example number of counters
-	counterChannel := make(chan int, numCounters)
-	for i := 1; i <= numCounters; i++ {
-		counterChannel <- i // Initialize counters as available
-	}
-
-	// Process passengers from the queue
-	for reservation := range passengerQueue {
-		counterID := <-counterChannel // Wait for an available counter
-		fmt.Printf("Passenger %s (Reservation ID: %s) arriving at Counter %d.\n", reservation.ClientID, reservation.ReservationID, counterID)
-
-		// Simulate check-in process
-		err := checkinSystem.ProcessCheckin(reservation.ReservationID, counterID)
-		if err != nil {
-			fmt.Printf("Error processing check-in for reservation %s: %v\n", reservation.ReservationID, err)
-		} else {
-			fmt.Printf("Passenger %s (Reservation ID: %s) checked in successfully at Counter %d.\n", reservation.ClientID, reservation.ReservationID, counterID)
-		}
-
-		counterChannel <- counterID // Make counter available again
-	}
-
-	fmt.Printf("Check-in simulation for flight %s finished.\n", flightNumber)
-
-	// You can add more logic here for waitlisted passengers, etc.
-	// Example: Process waitlisted passengers after regular check-in
-	waitlistedPassengers := checkinSystem.GetWaitlistedPassengers(flightNumber)
-	if len(waitlistedPassengers) > 0 {
-		fmt.Printf("\nProcessing waitlisted passengers for flight %s:\n", flightNumber)
-		for _, reservation := range waitlistedPassengers {
-			counterID := <-counterChannel // Wait for an available counter
-			fmt.Printf("Processing waitlisted passenger %s (Reservation ID: %s) at Counter %d.\n", reservation.ClientID, reservation.ReservationID, counterID)
-
-			err := checkinSystem.ProcessWaitlistCheckin(reservation.ReservationID, counterID)
-			if err != nil {
-				fmt.Printf("Error processing waitlist check-in for reservation %s: %v\n", reservation.ReservationID, err)
-			} else {
-				fmt.Printf("Waitlisted passenger %s (Reservation ID: %s) checked in successfully at Counter %d.\n", reservation.ClientID, reservation.ReservationID, counterID)
+		//ControlEmbaque
+		app.Wg.Add(1)
+		go func() {
+			defer app.Wg.Done()
+			vueloDetalle := vuelo.GetVuelo(v.Numero)
+			// Simula la espera hasta que el check-in esté abierto y no haya pendiente de salida
+			for {
+				if vueloDetalle.GetEstado() == "Embarque" {
+					fmt.Printf("✈️ Embarque: Iniciando  %s\n", vueloDetalle.Vuelo.Numero)
+					go genearEmbarque(vueloDetalle.Vuelo)
+					break
+				}
+				time.Sleep(100 * time.Millisecond)
 			}
-			counterChannel <- counterID // Make counter available again
+		}()
+
+	}
+
+	// Espera a que todas las goroutines terminen
+	app.Wg.Wait()
+}
+
+func IniciarControlDeVuelos() {
+	ticker := time.NewTicker(200 * time.Millisecond)
+	defer ticker.Stop()
+	for range ticker.C {
+		for _, v := range vuelo.GetVuelos() {
+			instance := vuelo.GetVuelo(v.Numero)
+			instance.ActualizarEstado()
+			//fmt.Printf("Estado del vuelo %s: %s\n", v.Numero, instance.GetEstado())
 		}
 	}
+}
+
+func genearEmbarque(vuelo models.VueloStruc) {
+	app.Wg.Add(1)
+	defer app.Wg.Done()
+	// genearEmbarque := embarque.GetInstance(vuelo)
+	// genearEmbarque.EjecutarEmbarque()
+}
+
+func simulaCheckIn(vuelo models.VueloStruc) {
+	app.Wg.Add(1)
+	defer app.Wg.Done()
+	pasajeros := checkin.ObtenerPasajerosPorVuelo(vuelo)
+	checkin.SimularLlegadas(pasajeros)
+	checkin.Mostrador()
 }

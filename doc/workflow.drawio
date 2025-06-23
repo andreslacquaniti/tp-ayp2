@@ -1,0 +1,112 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram id="sigoa-flujo" name="Flujo SIGOA">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="inicio" value="Inicio Simulación" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6AB04A;fontSize=14;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="140" y="30" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="llegadaPasajeros" value="Llegada de pasajeros" style="rectangle;whiteSpace=wrap;html=1;fillColor=#f6e58d;fontSize=12;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="130" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="colaCheckIn" value="Cola de espera en Check-in" style="parallelogram;whiteSpace=wrap;html=1;fillColor=#c7ecee;fontSize=12;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="120" y="200" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="checkIn" value="Proceso de Check-in&lt;div&gt;(mostradores habilitados)&lt;/div&gt;" style="rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#60a3bc;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="120" y="280" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="equipaje" value="Despacho de equipaje y emisión de tickets" style="rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#30336b;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="350" y="370" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cierreCheckIn" value="Cierre de Check-in&lt;div&gt;(45 min antes)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f9ca24;fontSize=12;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="110" y="360" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="asignarListaEspera" value="Asignar asientos a pasajeros en lista de espera\npor prioridad y orden de llegada" style="rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#686de0;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="75" y="480" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gestionCarga" value="Gestión de carga\nOptimización y asignación de paquetes" style="rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#22a6b3;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="450" y="90" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="inicioCarga" value="Inicio de carga&lt;div&gt;(finalizado el check-in)&lt;/div&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#6ab04a;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="620" y="230" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="finCarga" value="Fin de carga&lt;div&gt;(1 hora antes salida)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f0932b;fontSize=12;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="790" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="embarque" value="Embarque de pasajeros\nPor categoría y zonas" style="rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#535c68;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="90" y="585" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="horaLimiteEmbarque" value="¿Se alcanzó la hora límite&lt;br&gt;de embarque?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#eb4d4b;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="450" y="570" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cierrePuerta" value="Cerrar puerta y marcar vuelo listo para despegar" style="rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#30336b;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="430" y="720" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="despachoVuelo" value="Despacho de vuelos\nCola de prioridad por hora y estado" style="rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#f368e0;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="680" y="600" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="calculoHorizonte" value="Cálculo línea del&lt;div&gt;horizonte\nArchivo edificios.txt&lt;/div&gt;" style="rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#7ed6df;fontSize=12;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="680" y="470" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" value="Fin Simulación" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6AB04A;fontSize=14;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="930" y="535" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="inicio" target="llegadaPasajeros" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="llegadaPasajeros" target="colaCheckIn" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="colaCheckIn" target="checkIn" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="checkIn" target="equipaje" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="equipaje" target="cierreCheckIn" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="cierreCheckIn" target="asignarListaEspera" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="asignarListaEspera" target="gestionCarga" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="gestionCarga" target="inicioCarga" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="inicioCarga" target="finCarga" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="finCarga" target="embarque" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="embarque" target="horaLimiteEmbarque" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="horaLimiteEmbarque" target="cierrePuerta" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+          <mxPoint x="480" y="565" as="targetPoint" />
+        </mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="cierrePuerta" target="despachoVuelo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="despachoVuelo" target="calculoHorizonte" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="calculoHorizonte" target="fin" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" source="horaLimiteEmbarque" target="embarque" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+          <mxPoint x="380" y="490" as="targetPoint" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

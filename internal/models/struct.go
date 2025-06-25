@@ -38,16 +38,16 @@ type CargaStruc struct {
 	Volumen float64 `csv:"Volumen"`
 }
 
-// ClienteStruc representa datos de "clientes.txt"
+// ClienteStruc representa los datos de un cliente, con etiquetas para CSV y JSON.
 type ClienteStruc struct {
 	// Ejemplo: Nombre (e.g., Juan)
-	Nombre string `csv:"Nombre"`
+	Nombre string `csv:"Nombre" json:"nombre"` // Agregado json:"nombre"
 	// Ejemplo: Apellido (e.g., Pérez)
-	Apellido string `csv:"Apellido"`
+	Apellido string `csv:"Apellido" json:"apellido"` // Agregado json:"apellido"
 	// Ejemplo: DNI (e.g., 12345678)
-	DNI string `csv:"DNI"`
+	DNI string `csv:"DNI" json:"dni"` // Agregado json:"dni"
 	// Ejemplo: Categoria (e.g., Platino)
-	Categoria string `csv:"Categoria"`
+	Categoria string `csv:"Categoria" json:"categoria"` // Agregado json:"categoria"
 }
 
 // ConfiguracionAsientoStruc representa datos de "configuracion_asientos.txt"
@@ -95,5 +95,14 @@ type VueloStruc struct {
 	// Ejemplo: destino (e.g., MDQ)
 	Destino string `csv:"destino"`
 	// Ejemplo: aeronave (e.g., LV085)
-	Aeronave string `csv:"aeronave"`
+	Matricula string `csv:"aeronave"`
+}
+
+type LlegadaPasajero struct {
+	Ticket    string    `json:"ticket"`    // Ejemplo: "ABC12345"
+	DNI       string    `json:"dni"`       // Ejemplo: "12345678"
+	Prioridad int       `json:"prioridad"` // Ejemplo: 1 (alta), 2 (media), 3 (baja)
+	Llegada   time.Time `json:"llegada"`   // La marca de tiempo de la llegada
+	Zonas     int       `json:"zonas"`     // Ejemplo: 1, 2, 3 (número de zonas cubiertas por el ticket)
+	Index     int       // Índice en la cola de prioridad
 }

@@ -3,6 +3,8 @@ package checkin
 import (
 	"container/heap"
 	"fmt"
+	"sigoa/internal/models"
+	"sigoa/internal/utils"
 )
 
 // ---------- Tipos y estructuras ----------
@@ -10,10 +12,11 @@ import (
 var Pqueue = make(map[string]*PrioridadQueue)
 
 // ---------- Inicialización ----------
-func IniciarCola(nroVuelo string, lp *LlegadaPasajero) {
+func IniciarCola(nroVuelo string, lp *models.LlegadaPasajero) {
 	if Pqueue[nroVuelo] == nil {
 		Pqueue[nroVuelo] = &PrioridadQueue{}
 		heap.Init(Pqueue[nroVuelo])
+
 	}
 	heap.Push(Pqueue[nroVuelo], lp)
 
@@ -23,12 +26,12 @@ func IniciarCola(nroVuelo string, lp *LlegadaPasajero) {
 
 // 5. Mostrar lista de espera
 func MostrarListaEspera(lista []string) {
-	fmt.Println("\n📋 Lista de espera:")
+	utils.PrintLog("📋 Lista de espera:")
 	if len(lista) == 0 {
-		fmt.Println("✅ No hay pasajeros en lista de espera.")
+		utils.PrintLog("✅ No hay pasajeros en lista de espera.")
 	} else {
 		for _, dni := range lista {
-			fmt.Println(" - DNI:", dni)
+			utils.PrintLog(fmt.Sprint(" - DNI:", dni))
 		}
 	}
 }

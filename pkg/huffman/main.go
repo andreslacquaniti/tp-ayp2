@@ -6,9 +6,8 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"path/filepath"
+	"sigoa/internal/utils"
 	"strings"
-	"time"
 )
 
 // --- Estructuras para la Codificación Huffman ---
@@ -191,11 +190,11 @@ func decodeString(encodedData string, root *HuffmanNode) string {
 // --- Funciones de Guardado y Lectura de Archivos ---
 
 // Guardar string en un archivo .huff
-func Guardar(data string) (string, error) {
+func Guardar(data string, fileName string) (string, error) {
 	// Generar un nombre de archivo único
-	fileName := fmt.Sprintf("data_%d.huff", time.Now().UnixNano())
-	filePath := filepath.Join("./output/", fileName) // Guardar en el directorio actual
-
+	//fileName := fmt.Sprintf("data_%d.huff", time.Now().UnixNano())
+	//filePath := filepath.Join("./output/", fileName) // Guardar en el directorio actual
+	//fmt.Println("Guardando archivo:", fileName)
 	// 1. Construir el árbol y los códigos de Huffman
 	freqMap := buildFrequencyMap(data)
 	if len(freqMap) == 0 {
@@ -212,7 +211,7 @@ func Guardar(data string) (string, error) {
 	serializedTreeStr := serializeTree(huffmanTree)
 
 	// Abrir el archivo para escritura
-	file, err := os.Create(filePath)
+	file, err := os.Create(fileName)
 	if err != nil {
 		return "", fmt.Errorf("error al crear el archivo: %w", err)
 	}
@@ -223,7 +222,7 @@ func Guardar(data string) (string, error) {
 	// Guardar el árbol serializado y los datos codificados
 	// Separamos el árbol serializado y los datos codificados con un salto de línea
 	// para facilitar la lectura.
-	_, err = writer.WriteString(serializedTreeStr + "\n")
+	_, err = writer.WriteString(serializedTreeStr + "")
 	if err != nil {
 		return "", fmt.Errorf("error al escribir el árbol serializado: %w", err)
 	}
@@ -275,9 +274,9 @@ func Leer(fileName string) error {
 	// Decodificar los datos
 	decodedString := decodeString(encodedData, huffmanTree)
 
-	fmt.Println("--- Contenido Desencriptado ---")
-	fmt.Println(decodedString)
-	fmt.Println("------------------------------")
+	utils.PrintLog(fmt.Sprint("--- Contenido Desencriptado ---"))
+	utils.PrintLog(fmt.Sprint(decodedString))
+	utils.PrintLog(fmt.Sprint("------------------------------"))
 
 	return nil
 }

@@ -13,16 +13,18 @@ import (
 
 // Despachoc es una estructura Singleton que maneja la lógica relacionada a vuelos.
 type VueloApp struct {
-	Vuelo     models.VueloStruc
-	Edificios []models.EdificioStruc
-	Estado    string
+	Vuelo models.VueloStruc
+
+	Estado string
 }
+
+var Edificios []models.EdificioStruc
 
 // Mapa de prioridades por categoría
 var EstadoVuevlo = map[int]string{
 	1: "Cerrado",
 	2: "CheckIn",
-	3: "Enbarque",
+	3: "Embarque",
 	4: "PreDespegue",
 	5: "Despegue",
 }
@@ -59,7 +61,7 @@ func (c *VueloApp) ActualizarEstado() {
 		c.Estado = EstadoVuevlo[3] // Embarque
 	case ahora.After(c.Vuelo.FechaHora.Add(-15*time.Minute)) && ahora.Before(c.Vuelo.FechaHora):
 		c.Estado = EstadoVuevlo[4] // PreDespegue
-	case ahora.After(c.Vuelo.FechaHora) || ahora.Equal(c.Vuelo.FechaHora):
+	case ahora.Equal(c.Vuelo.FechaHora) || ahora.After(c.Vuelo.FechaHora):
 		c.Estado = EstadoVuevlo[5] // Despegue
 	}
 }
@@ -97,7 +99,7 @@ func (c *VueloApp) inicializar(nroVuelo string) {
 	if err != nil {
 		log.Fatalf("Error cargando edificios: %v", err)
 	}
-	c.Edificios = edificios
+	Edificios = edificios
 
 	// Buscar el vuelo exacto
 	for _, v := range vuelos {

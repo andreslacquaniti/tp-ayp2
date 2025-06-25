@@ -5,6 +5,7 @@ import (
 	"log"
 	"math/rand"
 	"os"
+	"sigoa/internal/utils"
 	"sort"
 	"time"
 )
@@ -13,19 +14,19 @@ import (
 // Complejidad del algoritmo:
 // - Verificación de seguridad: O(n × m), donde n = cantidad de vuelos, m = cantidad de edificios
 // - Ordenamiento por fecha: O(n log n), donde n = cantidad de vuelos seguros
-func (c *VueloApp) VuelosSeguro() bool {
+func (c *VueloApp) VuelosSeguro() (bool, int) {
 	altitudVuelo := c.generarAltitudRandom() // Genera una altitud aleatoria para el vuelo
 	seguro := true
-	for _, edificio := range c.Edificios {
+	for _, edificio := range Edificios {
 		// Verifica si algún edificio supera la altitud permitida
 		if edificio.Altura >= altitudVuelo {
-			fmt.Printf("⚠️  Vuelo %s potencialmente en conflicto con edificio entre %.1f y %.1f (altura: %.1f)\n",
-				c.Vuelo.Numero, edificio.Xi, edificio.Xf, edificio.Altura)
+			utils.PrintLog(fmt.Sprintf("⚠️ Despague %s potencialmente en conflicto con edificio entre %.1f y %.1f (altura: %.1f)",
+				c.Vuelo.Numero, edificio.Xi, edificio.Xf, edificio.Altura))
 			seguro = false
 			break // No es necesario seguir comprobando este vuelo
 		}
 	}
-	return seguro
+	return seguro, int(altitudVuelo)
 }
 
 // genera un número aleatorio tipo float64 entre 150 y 800.
@@ -40,7 +41,7 @@ func (c *VueloApp) generarAltitudRandom() float64 {
 
 // CalcularHorizonte genera la línea del horizonte a partir de los edificios y la guarda en un archivo.
 // Complejidad: O(n log n) utilizando técnica sweep line y heap implícito con mapa.
-func (c *VueloApp) CalcularHorizonte(nombreArchivo string) {
+func CalcularHorizonte(nombreArchivo string) {
 	type Punto struct {
 		x      float64
 		esIni  bool
@@ -48,7 +49,7 @@ func (c *VueloApp) CalcularHorizonte(nombreArchivo string) {
 	}
 
 	var puntos []Punto
-	for _, e := range c.Edificios {
+	for _, e := range Edificios {
 		puntos = append(puntos, Punto{e.Xi, true, e.Altura})
 		puntos = append(puntos, Punto{e.Xf, false, e.Altura})
 	}
@@ -104,8 +105,8 @@ func (c *VueloApp) CalcularHorizonte(nombreArchivo string) {
 	}
 	defer f.Close()
 	for _, linea := range resultado {
-		f.WriteString(linea + "\n")
+		f.WriteString(linea + "")
 	}
 
-	fmt.Println("✅ Línea del horizonte guardada en:", nombreArchivo)
+	utils.PrintLog(fmt.Sprint("✅ Línea del horizonte guardada en:", nombreArchivo))
 }

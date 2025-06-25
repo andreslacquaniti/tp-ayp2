@@ -7,13 +7,14 @@ import (
 	"sigoa/internal/checkin"
 	"sigoa/internal/embarque"
 	"sigoa/internal/models"
+	"sigoa/internal/utils"
 	"sigoa/pkg/csvfile"
 	"sigoa/pkg/huffman"
 	"time"
 )
 
 func main() {
-	fmt.Println("🚀 Iniciando simulación de Check-in\n")
+	utils.PrintLog(fmt.Sprint("🚀 Iniciando simulación de Check-in"))
 
 	// Paso 1: Inicializar app de check-in
 	app := checkin.NewCkeckin()
@@ -21,7 +22,7 @@ func main() {
 	// Paso 2: Cargar vuelos (desde archivo)
 	vuelos, err := csvfile.CargaCSV[models.VueloStruc]("vuelos.txt")
 	if err != nil {
-		fmt.Printf("❌ Error al cargar vuelos: %v\n", err)
+		utils.PrintLog(fmt.Sprintf("❌ Error al cargar vuelos: %v", err))
 		return
 	}
 	// Paso 3: Buscar vuelo específico
@@ -34,10 +35,10 @@ func main() {
 		}
 	}
 	if vueloSeleccionado == nil {
-		fmt.Printf("⚠️  Vuelo %s no encontrado.\n", numeroVuelo)
+		utils.PrintLog(fmt.Sprintf("⚠️  Vuelo %s no encontrado.", numeroVuelo)
 		return
 	}
-	fmt.Printf("✈️  Vuelo seleccionado: %s - Destino: %s - Fecha: %s\n\n",
+	utils.PrintLog(fmt.Sprintf("✈️  Vuelo seleccionado: %s - Destino: %s - Fecha: %s",
 		vueloSeleccionado.Numero, vueloSeleccionado.Destino,
 		vueloSeleccionado.FechaHora.Format("2006-01-02 15:04"))
 
@@ -52,12 +53,12 @@ func main() {
 	checkeados, listaEspera := app.ProcesarCheckin(llegadas, app.Reservas, capacidad)
 
 	// Paso 7: Mostrar resumen
-	fmt.Printf("\n🧾 Resumen del Check-in:\n")
-	fmt.Printf("✔️  Pasajeros checkeados: %d\n", len(checkeados))
-	fmt.Printf("⛔ En lista de espera: %d\n", len(listaEspera))
+	utils.PrintLog(fmt.Sprintf("🧾 Resumen del Check-in:")
+	utils.PrintLog(fmt.Sprintf("✔️  Pasajeros checkeados: %d", len(checkeados))
+	utils.PrintLog(fmt.Sprintf("⛔ En lista de espera: %d", len(listaEspera))
 	app.MostrarListaEspera(listaEspera)
 
-	fmt.Println("\n✅ Simulación finalizada.")
+	utils.PrintLog(fmt.Sprint("✅ Simulación finalizada."))
 
 	// Paso 8: Asignar carga a la aeronave
 	// Inicializa el módulo de carga
@@ -68,7 +69,7 @@ func main() {
 	resultado := appCarga.AsignarCarga("LV085")
 
 	// Mostrar carga seleccionada de forma legible
-	fmt.Println("\n📋 Carga asignada a la aeronave LV085:")
+	utils.PrintLog(fmt.Sprint("📋 Carga asignada a la aeronave LV085:"))
 	for _, c := range resultado {
 		// Convertimos peso a toneladas si es necesario
 		pesoStr := ""
@@ -81,7 +82,7 @@ func main() {
 		// Redondear volumen a 1 decimal
 		volumenStr := fmt.Sprintf("%.1f m³", c.Volumen)
 
-		fmt.Printf("✔ Destino: %-5s | Peso: %-14s | Volumen: %s\n", c.Destino, pesoStr, volumenStr)
+		utils.PrintLog(fmt.Sprintf("✔ Destino: %-5s | Peso: %-14s | Volumen: %s", c.Destino, pesoStr, volumenStr)
 	}
 
 	// Paso 9: Ejecutar embarque
@@ -103,12 +104,12 @@ func main() {
 	decoded := huffman.HuffmanDecode(data)
 
 	// Mostrar resultado
-	fmt.Println("📋 Resultado decodificado:")
-	fmt.Println(decoded)
+	utils.PrintLog(fmt.Sprint("📋 Resultado decodificado:"))
+	utils.PrintLog(fmt.Sprint(decoded))
 
 	//
 
-	fmt.Println("🚀 Iniciando simulación de despacho de vuelos...")
+	utils.PrintLog(fmt.Sprint("🚀 Iniciando simulación de despacho de vuelos..."))
 
 	// Obtener instancia de vuelo (Singleton)
 	despachoApp := despacho.GetInstance()
@@ -123,11 +124,11 @@ func main() {
 	vuelosListos := despachoApp.ObtenerVuelosSeguros()
 
 	// Mostrar vuelos despachados
-	fmt.Println("🛫 Vuelos despachados (ordenados por hora):")
+	utils.PrintLog(fmt.Sprint("🛫 Vuelos despachados (ordenados por hora):"))
 	for _, v := range vuelosListos {
-		fmt.Printf("✔ Vuelo %s a %s - %s - Aeronave: %s\n", v.Numero, v.Destino, v.FechaHora.Format("02/01/2006 15:04"), v.Aeronave)
+		utils.PrintLog(fmt.Sprintf("✔ Vuelo %s a %s - %s - Aeronave: %s", v.Numero, v.Destino, v.FechaHora.Format("02/01/2006 15:04"), v.Aeronave)
 	}
 
-	fmt.Printf("✅ Total de vuelos despachados: %d\n", len(vuelosListos))
+	utils.PrintLog(fmt.Sprintf("✅ Total de vuelos despachados: %d", len(vuelosListos))
 	time.Sleep(1 * time.Second)
 }

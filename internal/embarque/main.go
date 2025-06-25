@@ -4,119 +4,74 @@ package embarque
 import (
 	"fmt"
 	"log"
-	"os"
-	"path/filepath"
+	"sigoa/internal/carga"
+	"sigoa/internal/checkin"
+	"sigoa/internal/guardar"
 	"sigoa/internal/models"
+	"sigoa/internal/utils"
+	"sigoa/internal/vuelo"
 	"sigoa/pkg/csvfile"
-	"sigoa/pkg/huffman"
-	"sort"
-	"time"
 )
 
 type EmbarqueApp struct {
 	Configuracion []models.ConfiguracionAsientoStruc
-	Reservas      []models.ReservaStruc
-	Clientes      []models.ClienteStruc
 	vuelo         models.VueloStruc
 }
 
-var singleInstance *EmbarqueApp
+// var singleInstance *EmbarqueApp
 
-func GetInstance(vuelo models.VueloStruc) *EmbarqueApp {
-	if singleInstance == nil {
-		singleInstance = &EmbarqueApp{
-			vuelo: vuelo,
-		}
+func NewEmbarque(vuelo models.VueloStruc) *EmbarqueApp {
+	singleInstance := &EmbarqueApp{
+		vuelo: vuelo,
 	}
+	singleInstance.inicializar()
 	return singleInstance
 }
 
-func (app *EmbarqueApp) Inicializar() {
+func (c *EmbarqueApp) inicializar() {
 	// Cargar configuraciones de asientos
 	config, err := csvfile.CargaCSV[models.ConfiguracionAsientoStruc]("configuracion_asientos.txt")
 	if err != nil {
 		log.Fatalf("Error cargando configuracion de asientos: %v", err)
 	}
-	app.Configuracion = config
-
-	// Cargar reservas
-	reservas, err := csvfile.CargaCSV[models.ReservaStruc]("reservas.txt")
-	if err != nil {
-		log.Fatalf("Error cargando reservas: %v", err)
-	}
-	app.Reservas = reservas
-
-	// Cargar clientes
-	clientes, err := csvfile.CargaCSV[models.ClienteStruc]("clientes.txt")
-	if err != nil {
-		log.Fatalf("Error cargando clientes: %v", err)
-	}
-	app.Clientes = clientes
+	c.Configuracion = config
 }
 
-// Estructura para representar el embarque
-type PasajeroEmbarque struct {
-	DNI       string
-	Zona      int
-	Nombre    string
-	Apellido  string
-	Categoria string
-}
+func (c *EmbarqueApp) ProcesarEmbarque() {
+	// Apertura de Embarque.
+	for checkin.Pqueue[c.vuelo.Numero] == nil {
+	}
 
-func (app *EmbarqueApp) EjecutarEmbarque(codigoAeronave string) {
-	var pasajeros []PasajeroEmbarque
+	// Subierndo Pasajeros en la zona asignada xxx
+	pasajeros := checkin.Pqueue[c.vuelo.Numero]
+	for _, pasajero := range *pasajeros {
+		utils.PrintLog(fmt.Sprintf("✔ Vuelo %s , Embarque de Pasajero %s, en la Zona %d:", c.vuelo.Numero, pasajero.DNI, pasajero.Zonas))
+	}
 
-	for _, r := range app.Reservas {
-		if r.EstadoReserva == "Checkeado" {
-			cliente := buscarCliente(app.Clientes, r.DNIPasajero)
-			zona := obtenerZona(app.Configuracion, codigoAeronave, cliente.DNI)
-			pasajeros = append(pasajeros, PasajeroEmbarque{
-				DNI:       cliente.DNI,
-				Nombre:    cliente.Nombre,
-				Apellido:  cliente.Apellido,
-				Categoria: cliente.Categoria,
-				Zona:      zona,
-			})
+	// Cargando Carga
+	carga.GetInstance().ProcesarCarga(c.vuelo)
+
+	// Calculando Altura para el vuelo
+	for {
+		esSeguro, altura := vuelo.GetVuelo(c.vuelo.Numero).VuelosSeguro()
+		if esSeguro {
+			utils.PrintLog(fmt.Sprintf("✈️ Salida: Vuelo Seguro %s, Altura: %.0f metros", c.vuelo.Numero, float64(altura)))
+			break
+		} else {
+			utils.PrintLog(fmt.Sprintf("⚠️ Salida: Vuelo INSEGURO %s, Altura : %.0f metros, esperando condiciones seguras...", c.vuelo.Numero, float64(altura)))
 		}
 	}
 
-	// Ordenar por categoría y luego por zona (Platino > Oro > Plata > Normal)
-	prioridades := map[string]int{"Platino": 1, "Oro": 2, "Plata": 3, "Normal": 4}
-	sort.Slice(pasajeros, func(i, j int) bool {
-		if prioridades[pasajeros[i].Categoria] != prioridades[pasajeros[j].Categoria] {
-			return prioridades[pasajeros[i].Categoria] < prioridades[pasajeros[j].Categoria]
-		}
-		return pasajeros[i].Zona < pasajeros[j].Zona
-	})
-
-	// Construir la salida de embarque
-	output := "Embarque de Pasajeros - " + time.Now().Format("2006-01-02 15:04:05") + "\n\n"
-	for _, p := range pasajeros {
-		output += fmt.Sprintf("✔ %s %s - DNI: %s - Zona: %d - Categoria: %s\n", p.Nombre, p.Apellido, p.DNI, p.Zona, p.Categoria)
+	for vuelo.GetVuelo(c.vuelo.Numero).GetEstado() != "Despegue" {
 	}
 
-	// Codificar y guardar en archivo usando Huffman
-	encoded := huffman.HuffmanEncode(output)
-	filename := filepath.Join("output", time.Now().Format("20060102_150405")+".out")
-	os.WriteFile(filename, encoded, 0644)
+	utils.PrintLog(fmt.Sprintf("✈️ Embarque: Vuelo %s CERRADO ", c.vuelo.Numero))
 
-	fmt.Println("✔ Embarque realizado. Archivo generado:", filename)
-}
-
-func buscarCliente(lista []models.ClienteStruc, dni string) models.ClienteStruc {
-	for _, c := range lista {
-		if c.DNI == dni {
-			return c
-		}
+	for vuelo.GetVuelo(c.vuelo.Numero).GetEstado() != "Despegue" {
 	}
-	return models.ClienteStruc{}
-}
 
-func obtenerZona(configs []models.ConfiguracionAsientoStruc, codigo, dni string) int {
-	for _, c := range configs {
-		if c.CodigoAeronave == codigo {
-			return c.Zona
-		}
-	}
-	return 0 // zona por defecto
+	utils.PrintLog(fmt.Sprintf("✈️ Salida: Vuelo %s en Despegue...", c.vuelo.Numero))
+	//delete(checkin.Pqueue, app.vuelo.Numero)
+
+	guardar.GuardarRegistroVueloEnJson(c.vuelo.Numero)
 }

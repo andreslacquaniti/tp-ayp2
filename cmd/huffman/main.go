@@ -9,8 +9,8 @@ import (
 func main() {
 	// Verificar si se proporcionó un nombre de archivo como argumento
 	if len(os.Args) < 2 {
-		fmt.Println("Uso: go run tu_programa.go <nombre_del_archivo.huff>")
-		fmt.Println("Ejemplo: go run main.go data_1700000000000000000.huff")
+		utils.PrintLog(fmt.Sprint("Uso: go run tu_programa.go <nombre_del_archivo.huff>"))
+		utils.PrintLog(fmt.Sprint("Ejemplo: go run main.go data_1700000000000000000.huff"))
 		return
 	}
 
@@ -20,9 +20,9 @@ func main() {
 	// Leer y desencriptar el archivo
 	err := huffman.Leer(filename) // Asegúrate de que 'err' sea una nueva variable aquí
 	if err != nil {
-		fmt.Printf("Error al leer el archivo '%s': %v\n", filename, err)
+		utils.PrintLog(fmt.Sprintf("Error al leer el archivo '%s': %v", filename, err)
 		return
 	}
 
-	fmt.Printf("Archivo '%s' leído y desencriptado con éxito.\n", filename)
+	utils.PrintLog(fmt.Sprintf("Archivo '%s' leído y desencriptado con éxito.", filename)
 }

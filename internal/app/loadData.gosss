@@ -48,7 +48,7 @@ func maisssssssssn() {
 	if err != nil {
 		log.Fatalf("Error cargando vuelos: %v", err)
 	}
-	fmt.Printf("Vuelos cargados: %+v\n\n", vuelos)
+	utils.PrintLog(fmt.Sprintf("Vuelos cargados: %+v", vuelos)
 	app.Vuelos = vuelos // Asignar los datos cargados a la variable global en app
 
 	// Aquí podrías iniciar la simulación principal una vez que los datos estén cargados

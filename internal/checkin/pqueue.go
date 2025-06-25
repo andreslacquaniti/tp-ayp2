@@ -2,18 +2,11 @@ package checkin
 
 import (
 	"container/heap"
+	"sigoa/internal/models"
 	"time"
 )
 
 // ---------- Cola de prioridad (Heap) ----------
-
-type LlegadaPasajero struct {
-	DNI       string
-	Prioridad int
-	Llegada   time.Time
-	Zonas     int
-	Index     int
-}
 
 // Mapa de prioridades por categoría
 var categoriaPrioridad = map[string]int{
@@ -31,7 +24,7 @@ var ZonaSalida = map[string]int{
 	"Normal":  3,
 }
 
-type PrioridadQueue []*LlegadaPasajero
+type PrioridadQueue []*models.LlegadaPasajero
 
 func (pq PrioridadQueue) Len() int { return len(pq) }
 
@@ -50,7 +43,7 @@ func (pq PrioridadQueue) Swap(i, j int) {
 
 func (pq *PrioridadQueue) Push(x any) {
 	n := len(*pq)
-	item := x.(*LlegadaPasajero)
+	item := x.(*models.LlegadaPasajero)
 	item.Index = n
 	*pq = append(*pq, item)
 }
@@ -63,7 +56,7 @@ func (pq *PrioridadQueue) Pop() any {
 	*pq = old[0 : n-1]
 	return item
 }
-func (pq *PrioridadQueue) Actualizar(item *LlegadaPasajero, prioridad int, llegada time.Time) {
+func (pq *PrioridadQueue) Actualizar(item *models.LlegadaPasajero, prioridad int, llegada time.Time) {
 	item.Prioridad = prioridad
 	item.Llegada = llegada
 	heap.Fix(pq, item.Index)

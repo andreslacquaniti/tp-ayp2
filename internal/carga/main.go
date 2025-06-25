@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"sigoa/internal/models"
+	"sigoa/internal/utils"
 	"sigoa/pkg/csvfile"
 )
 
@@ -19,13 +20,14 @@ var instancia *CargaApp
 func GetInstance() *CargaApp {
 	if instancia == nil {
 		instancia = &CargaApp{}
+		instancia.inicializar()
 	}
 	return instancia
 }
 
 // Inicializa los datos desde archivos CSV
-func (c *CargaApp) Inicializar() {
-	fmt.Println("🚛 Inicializando módulo de Carga...")
+func (c *CargaApp) inicializar() {
+	utils.PrintLog("🚛 Inicializando módulo de Carga...")
 
 	// Cargar aeronaves
 	aeronaves, err := csvfile.CargaCSV[models.AeronaveStruc]("aeronaves.txt")
@@ -41,32 +43,64 @@ func (c *CargaApp) Inicializar() {
 	}
 	c.Cargas = cargas
 
-	fmt.Println("✅ Datos cargados correctamente.")
+	utils.PrintLog("✅ Datos cargados correctamente.")
+}
+
+func (c *CargaApp) getAeronave(matricula string) models.AeronaveStruc {
+	for _, a := range c.Aeronaves {
+		if a.Matricula == matricula {
+			return a
+		}
+	}
+	utils.PrintLog(fmt.Sprintf("⚠️ Aeronave %s no encontrada.", matricula))
+	return models.AeronaveStruc{}
+}
+
+func (c *CargaApp) getCargas(destino string) []models.CargaStruc {
+	var cargasDestino []models.CargaStruc
+	for _, carga := range c.Cargas {
+		if carga.Destino == destino {
+			cargasDestino = append(cargasDestino, carga)
+		}
+	}
+	if len(cargasDestino) == 0 {
+		utils.PrintLog(fmt.Sprintf("⚠️ Carga para destino %s no encontrada.", destino))
+	}
+	return cargasDestino
 }
 
 // Asignar carga a una aeronave específica utilizando el algoritmo de la mochila
-func (c *CargaApp) AsignarCarga(matricula string) []models.CargaStruc {
-	var aeronave *models.AeronaveStruc
-	for _, a := range c.Aeronaves {
-		if a.Matricula == matricula {
-			aeronave = &a
-			break
-		}
-	}
-	if aeronave == nil {
-		fmt.Printf("⚠️ Aeronave %s no encontrada.\n", matricula)
-		return nil
-	}
-
-	fmt.Printf("\n📦 Asignando carga a la aeronave %s (Capacidad: %.2f kg, Volumen: %.2f m3)\n",
-		aeronave.Matricula, aeronave.CapacidadCarga, aeronave.VolumenCarga)
+func (c *CargaApp) ProcesarCarga(vuelo models.VueloStruc) {
+	aeronave := c.getAeronave(vuelo.Matricula)
+	cargas := c.getCargas(vuelo.Destino)
 
 	// Algoritmo de la mochila extendido: peso y volumen como restricciones
-	return mochilaCarga(c.Cargas, aeronave.CapacidadCarga, aeronave.VolumenCarga)
+	mochilaCarga(cargas, aeronave, vuelo.Numero)
+
+}
+func mochilaCarga(items []models.CargaStruc, aeronave models.AeronaveStruc, vuelo string) {
+
+	var resultado []models.CargaStruc
+	var fuera []models.CargaStruc
+	pesoActual := 0.0
+	volumenActual := 0.0
+
+	for _, item := range items {
+		if pesoActual+item.Peso <= aeronave.CapacidadCarga && volumenActual+item.Volumen <= aeronave.VolumenCarga {
+			resultado = append(resultado, item)
+			pesoActual += item.Peso
+			volumenActual += item.Volumen
+		} else {
+			fuera = append(fuera, item)
+		}
+	}
+	utils.PrintLog(fmt.Sprintf("✈️ Carga : Capacidad: %s %.2f kg | %.2f m3", vuelo, aeronave.CapacidadCarga, aeronave.VolumenCarga))
+	utils.PrintLog(fmt.Sprintf("✅ Carga : Vuelo %s, Asignada: %d items | Total: %.2f kg, %.2f m3", vuelo, len(resultado), aeronave.CapacidadCarga, aeronave.VolumenCarga))
+	utils.PrintLog(fmt.Sprintf("⚠️ Carga : Vuelo %s, Fuera de la aeronave: %d items", vuelo, len(fuera)))
 }
 
 // Algoritmo tipo "Mochila" para seleccionar la mejor combinación de cargas
-func mochilaCarga(items []models.CargaStruc, maxPeso, maxVolumen float64) []models.CargaStruc {
+func mochilaCarga2(items []models.CargaStruc, maxPeso, maxVolumen float64) {
 	n := len(items)
 	dp := make([][]float64, n+1)
 
@@ -111,6 +145,5 @@ func mochilaCarga(items []models.CargaStruc, maxPeso, maxVolumen float64) []mode
 		}
 	}
 
-	fmt.Printf("✅ Carga asignada: %d items | Total: %.2f kg, %.2f m3\n", len(resultado), totalPeso, totalVol)
-	return resultado
+	utils.PrintLog(fmt.Sprintf("✅ Carga asignada: %d items | Total: %.2f kg, %.2f m3", len(resultado), totalPeso, totalVol))
 }

@@ -1,0 +1,677 @@
+05:30 | 🛫 Inicializando sistema de Check-in...
+05:30 | ✔️  150 reservas cargadas
+05:30 | ✔️  139 clientes cargados
+05:30 | 🚛 Inicializando módulo de Carga...
+05:30 | ✅ Datos cargados correctamente.
+05:31 | ✅ Línea del horizonte guardada en:horizonte_1750810730870774100.huff
+06:09 | ✅ Check-in abierto para el vuelo AA123
+06:09 | 🔍 Buscando pasajeros del vuelo AA123...
+06:09 | 🧍 12 pasajeros encontrados para el vuelo AA123
+06:13 | 📍 Llegada: Julieta Rivera (DNI: 31123456) , Hora 06:13
+06:19 | 📍 Llegada: Sergio Gallego (DNI: 45133768) , Hora 06:19
+06:22 | 📍 Llegada: Facundo Cruz (DNI: 81778269) , Hora 06:22
+06:25 | 📍 Llegada: Andrea Domínguez (DNI: 54498152) , Hora 06:25
+06:30 | 📍 Llegada: Camila Gómez (DNI: 25890123) , Hora 06:30
+06:34 | 📍 Llegada: Lucas Guerrero (DNI: 93345678) , Hora 06:34
+06:37 | 📍 Llegada: Federico Soto (DNI: 44345678) , Hora 06:37
+06:43 | 📍 Llegada: Isabella Torres (DNI: 29567890) , Hora 06:43
+06:47 | 📍 Llegada: Elena Ramírez (DNI: 90749074) , Hora 06:47
+06:52 | 📍 Llegada: Mía Mendoza (DNI: 39345678) , Hora 06:52
+06:57 | 📍 Llegada: Andrea Rojas (DNI: 30175585) , Hora 06:57
+07:00 | 📍 Llegada: Camila Lara (DNI: 55123456) , Hora 07:00
+07:00 | 🛂 Mostrador 1: Pasajero 31123456 ingresó al mostrador. Tiempo de espera: 47 minutos
+07:00 | 🛂 Mostrador 2: Pasajero 45133768 ingresó al mostrador. Tiempo de espera: 41 minutos
+07:06 | ✅ Checkin: Pasajero 45133768, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+07:07 | ✈️ Embarque: Iniciando  AA123
+07:07 | ✔ Vuelo AA123 , Embarque de Pasajero 31123456, en la Zona 2:
+07:07 | ✈️ Carga : Capacidad: AA123 2000.00 kg | 100.00 m3
+07:07 | ✅ Carga : Vuelo AA123, Asignada: 3 items | Total: 2000.00 kg, 100.00 m3
+07:07 | ⚠️ Carga : Vuelo AA123, Fuera de la aeronave: 1 items
+07:07 | ✈️ Salida: Vuelo Seguro AA123, Altura: 764 metros
+07:07 | ✅ Checkin: Pasajero 31123456, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+07:07 | 🛂 Mostrador 1: Pasajero 81778269 ingresó al mostrador. Tiempo de espera: 45 minutos
+07:08 | ✅ Check-in abierto para el vuelo AA486
+07:09 | 🔍 Buscando pasajeros del vuelo AA486...
+07:09 | 🧍 12 pasajeros encontrados para el vuelo AA486
+07:14 | 📍 Llegada: María López (DNI: 22334455) , Hora 07:14
+07:15 | ✅ Checkin: Pasajero 81778269, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+07:15 | 🛂 Mostrador 1: Pasajero 54498152 ingresó al mostrador. Tiempo de espera: 50 minutos
+07:19 | 📍 Llegada: Emilio Muñoz (DNI: 70130024) , Hora 07:19
+07:23 | ✅ Checkin: Pasajero 54498152, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+07:23 | 🛂 Mostrador 1: Pasajero 25890123 ingresó al mostrador. Tiempo de espera: 53 minutos
+07:23 | 📍 Llegada: Agustina Medina (DNI: 48345678) , Hora 07:23
+07:28 | 📍 Llegada: Camila Acosta (DNI: 52908665) , Hora 07:28
+07:30 | ✅ Checkin: Pasajero 25890123, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+07:30 | 🛂 Mostrador 1: Pasajero 93345678 ingresó al mostrador. Tiempo de espera: 56 minutos
+07:30 | 🛂 Mostrador 2: Pasajero 44345678 ingresó al mostrador. Tiempo de espera: 53 minutos
+07:33 | ✅ Checkin: Pasajero 93345678, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+07:33 | 📍 Llegada: Antonella Molina (DNI: 92123456) , Hora 07:33
+07:38 | 📍 Llegada: María Campos (DNI: 50345678) , Hora 07:38
+07:38 | ✅ Checkin: Pasajero 44345678, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+07:39 | 🛂 Mostrador 1: Pasajero 29567890 ingresó al mostrador. Tiempo de espera: 56 minutos
+07:39 | 🛂 Mostrador 2: Pasajero 90749074 ingresó al mostrador. Tiempo de espera: 52 minutos
+07:41 | ✅ Checkin: Pasajero 90749074, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+07:44 | 📍 Llegada: Tomás Paz (DNI: 85345678) , Hora 07:44
+07:45 | ✅ Checkin: Pasajero 29567890, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+07:45 | 🛂 Mostrador 1: Pasajero 39345678 ingresó al mostrador. Tiempo de espera: 53 minutos
+07:46 | 📍 Llegada: Victoria López (DNI: 70320864) , Hora 07:46
+07:49 | ✅ Checkin: Pasajero 39345678, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+07:49 | 🛂 Mostrador 1: Pasajero 30175585 ingresó al mostrador. Tiempo de espera: 52 minutos
+07:52 | 📍 Llegada: Bruno Soto (DNI: 83345678) , Hora 07:52
+07:54 | ✅ Checkin: Pasajero 30175585, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+07:54 | 🛂 Mostrador 1: Pasajero 55123456 ingresó al mostrador. Tiempo de espera: 54 minutos
+07:57 | 📍 Llegada: Carlos López (DNI: 11223344) , Hora 07:57
+08:00 | 🚨 Pasajero 55123456 Llego Tarde, No puede abordar
+08:00 | 🛂 Mostrador 1: Pasajero 22334455 ingresó al mostrador. Tiempo de espera: 46 minutos
+08:02 | ✅ Checkin: Pasajero 22334455, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+08:02 | 🛂 Mostrador 1: Pasajero 70130024 ingresó al mostrador. Tiempo de espera: 43 minutos
+08:03 | 📍 Llegada: Sabrina Bravo (DNI: 84123456) , Hora 08:03
+08:06 | 📍 Llegada: Andrea Serrano (DNI: 71568008) , Hora 08:06
+08:06 | 🛂 Mostrador 1: Pasajero 48345678 ingresó al mostrador. Tiempo de espera: 43 minutos
+08:07 | ✈️ Embarque: Vuelo AA123 CERRADO 
+08:07 | ✈️ Salida: Vuelo AA123 en Despegue...
+08:08 | ✈️ Embarque: Iniciando  AA486
+08:08 | ✔ Vuelo AA486 , Embarque de Pasajero 22334455, en la Zona 2:
+08:08 | ✈️ Carga : Capacidad: AA486 1800.00 kg | 120.00 m3
+08:08 | ✅ Carga : Vuelo AA486, Asignada: 4 items | Total: 1800.00 kg, 120.00 m3
+08:08 | ⚠️ Carga : Vuelo AA486, Fuera de la aeronave: 0 items
+08:09 | ✈️ Salida: Vuelo Seguro AA486, Altura: 702 metros
+08:10 | ✅ Check-in abierto para el vuelo AA789
+08:11 | ✅ Checkin: Pasajero 70130024, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+08:11 | 🛂 Mostrador 1: Pasajero 52908665 ingresó al mostrador. Tiempo de espera: 43 minutos
+08:10 | 🔍 Buscando pasajeros del vuelo AA789...
+08:11 | 🧍 12 pasajeros encontrados para el vuelo AA789
+08:13 | ✅ Checkin: Pasajero 48345678, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+08:13 | 🛂 Mostrador 1: Pasajero 92123456 ingresó al mostrador. Tiempo de espera: 40 minutos
+08:14 | ✅ Checkin: Pasajero 52908665, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+08:14 | 🛂 Mostrador 1: Pasajero 50345678 ingresó al mostrador. Tiempo de espera: 36 minutos
+08:15 | 📍 Llegada: Emilio Domínguez (DNI: 94568471) , Hora 08:15
+08:19 | ✅ Checkin: Pasajero 50345678, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+08:19 | 📍 Llegada: Valeria Acosta (DNI: 88123456) , Hora 08:19
+08:19 | 🛂 Mostrador 1: Pasajero 85345678 ingresó al mostrador. Tiempo de espera: 35 minutos
+08:22 | ✅ Checkin: Pasajero 92123456, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+08:22 | 🛂 Mostrador 1: Pasajero 70320864 ingresó al mostrador. Tiempo de espera: 36 minutos
+08:23 | ✅ Checkin: Pasajero 85345678, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+08:23 | 🛂 Mostrador 1: Pasajero 83345678 ingresó al mostrador. Tiempo de espera: 31 minutos
+08:24 | 📍 Llegada: Sergio Pérez (DNI: 34567890) , Hora 08:24
+08:28 | 📍 Llegada: Ricardo Gallego (DNI: 75208878) , Hora 08:28
+08:31 | ✅ Checkin: Pasajero 70320864, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+08:31 | 🛂 Mostrador 1: Pasajero 11223344 ingresó al mostrador. Tiempo de espera: 34 minutos
+08:31 | 📍 Llegada: Tomás Guerrero (DNI: 54345678) , Hora 08:31
+08:33 | ✅ Checkin: Pasajero 83345678, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+08:33 | 🛂 Mostrador 1: Pasajero 84123456 ingresó al mostrador. Tiempo de espera: 30 minutos
+08:34 | ✅ Checkin: Pasajero 11223344, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+08:34 | 🛂 Mostrador 1: Pasajero 71568008 ingresó al mostrador. Tiempo de espera: 28 minutos
+08:36 | 📍 Llegada: Valentina López (DNI: 21123456) , Hora 08:36
+08:37 | ✅ Checkin: Pasajero 84123456, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+08:37 | 🛂 Mostrador 1: Pasajero 94568471 ingresó al mostrador. Tiempo de espera: 22 minutos
+08:39 | ✅ Checkin: Pasajero 71568008, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+08:39 | 🛂 Mostrador 1: Pasajero 88123456 ingresó al mostrador. Tiempo de espera: 20 minutos
+08:40 | 📍 Llegada: Gabriel Núñez (DNI: 44849061) , Hora 08:40
+08:39 | ✅ Checkin: Pasajero 94568471, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+08:40 | 🛂 Mostrador 1: Pasajero 34567890 ingresó al mostrador. Tiempo de espera: 16 minutos
+08:43 | ✅ Checkin: Pasajero 88123456, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+08:44 | 🛂 Mostrador 1: Pasajero 75208878 ingresó al mostrador. Tiempo de espera: 16 minutos
+08:44 | 📍 Llegada: Elena Hernández (DNI: 93430561) , Hora 08:44
+08:49 | 📍 Llegada: Thiago Silva (DNI: 40123456) , Hora 08:49
+08:49 | ✅ Checkin: Pasajero 34567890, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+08:50 | 🛂 Mostrador 1: Pasajero 54345678 ingresó al mostrador. Tiempo de espera: 19 minutos
+08:50 | ✅ Checkin: Pasajero 75208878, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+08:50 | 🛂 Mostrador 1: Pasajero 21123456 ingresó al mostrador. Tiempo de espera: 14 minutos
+08:52 | 📍 Llegada: Valeria Cruz (DNI: 43567890) , Hora 08:52
+08:54 | ✅ Checkin: Pasajero 54345678, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+08:54 | 🛂 Mostrador 1: Pasajero 44849061 ingresó al mostrador. Tiempo de espera: 14 minutos
+08:56 | 📍 Llegada: Mía Morales (DNI: 72123456) , Hora 08:56
+09:00 | ✅ Checkin: Pasajero 21123456, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+09:00 | 🛂 Mostrador 1: Pasajero 93430561 ingresó al mostrador. Tiempo de espera: 16 minutos
+09:01 | 📍 Llegada: Facundo Sánchez (DNI: 26901234) , Hora 09:01
+09:01 | ✅ Checkin: Pasajero 44849061, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+09:01 | 🛂 Mostrador 1: Pasajero 43567890 ingresó al mostrador. Tiempo de espera: 9 minutos
+09:01 | 🛂 Mostrador 1: Pasajero 40123456 ingresó al mostrador. Tiempo de espera: 12 minutos
+09:03 | ✅ Checkin: Pasajero 93430561, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+09:04 | 🛂 Mostrador 1: Pasajero 72123456 ingresó al mostrador. Tiempo de espera: 8 minutos
+09:08 | ✈️ Embarque: Vuelo AA486 CERRADO 
+09:08 | ✈️ Salida: Vuelo AA486 en Despegue...
+09:09 | ✅ Checkin: Pasajero 40123456, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+09:09 | ✈️ Embarque: Iniciando  AA789
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 94568471, en la Zona 0:
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 75208878, en la Zona 0:
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 34567890, en la Zona 0:
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 88123456, en la Zona 1:
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 54345678, en la Zona 0:
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 21123456, en la Zona 3:
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 44849061, en la Zona 2:
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 93430561, en la Zona 2:
+09:09 | ✔ Vuelo AA789 , Embarque de Pasajero 40123456, en la Zona 1:
+09:09 | ✈️ Carga : Capacidad: AA789 2500.00 kg | 150.00 m3
+09:09 | ✅ Carga : Vuelo AA789, Asignada: 3 items | Total: 2500.00 kg, 150.00 m3
+09:09 | ⚠️ Carga : Vuelo AA789, Fuera de la aeronave: 2 items
+09:09 | ✈️ Salida: Vuelo Seguro AA789, Altura: 734 metros
+09:09 | 🛂 Mostrador 1: Pasajero 26901234 ingresó al mostrador. Tiempo de espera: 8 minutos
+09:10 | ✅ Check-in abierto para el vuelo AA790
+09:10 | 🔍 Buscando pasajeros del vuelo AA790...
+09:10 | 🧍 13 pasajeros encontrados para el vuelo AA790
+09:11 | ✅ Checkin: Pasajero 43567890, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+09:12 | ✅ Checkin: Pasajero 72123456, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+09:14 | 📍 Llegada: Leandro Romero (DNI: 56345678) , Hora 09:14
+09:15 | ✅ Checkin: Pasajero 26901234, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+09:16 | 🛂 Mostrador 1: Pasajero 56345678 ingresó al mostrador. Tiempo de espera: 2 minutos
+09:17 | 📍 Llegada: Matías Rojas (DNI: 77345678) , Hora 09:17
+09:18 | ✅ Checkin: Pasajero 56345678, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+09:18 | 🛂 Mostrador 1: Pasajero 77345678 ingresó al mostrador. Tiempo de espera: 1 minutos
+09:22 | 📍 Llegada: Martín Castillo (DNI: 39015168) , Hora 09:22
+09:24 | 📍 Llegada: Antonella Herrera (DNI: 35345678) , Hora 09:24
+09:27 | ✅ Checkin: Pasajero 77345678, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+09:27 | 🛂 Mostrador 1: Pasajero 39015168 ingresó al mostrador. Tiempo de espera: 5 minutos
+09:28 | 📍 Llegada: Luciano Silva (DNI: 59345678) , Hora 09:28
+09:31 | 📍 Llegada: Agustín Ramírez (DNI: 28345678) , Hora 09:31
+09:36 | ✅ Check-in abierto para el vuelo AA799
+09:36 | 🔍 Buscando pasajeros del vuelo AA799...
+09:36 | 🧍 13 pasajeros encontrados para el vuelo AA799
+09:37 | ✅ Checkin: Pasajero 39015168, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+09:37 | 🛂 Mostrador 1: Pasajero 35345678 ingresó al mostrador. Tiempo de espera: 13 minutos
+09:37 | 📍 Llegada: Martín Sánchez (DNI: 69345678) , Hora 09:37
+09:41 | 📍 Llegada: Benjamín Rojas (DNI: 38123456) , Hora 09:41
+09:42 | 📍 Llegada: Joaquín Acosta (DNI: 49123456) , Hora 09:42
+09:43 | ✅ Checkin: Pasajero 35345678, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+09:43 | 🛂 Mostrador 1: Pasajero 59345678 ingresó al mostrador. Tiempo de espera: 15 minutos
+09:45 | 📍 Llegada: Emiliano Reyes (DNI: 42345678) , Hora 09:45
+09:46 | 📍 Llegada: Bruno Navarro (DNI: 52345678) , Hora 09:46
+09:47 | 📍 Llegada: Mateo García (DNI: 67345678) , Hora 09:47
+09:50 | 📍 Llegada: Paula Delgado (DNI: 57123456) , Hora 09:50
+09:51 | ✅ Checkin: Pasajero 59345678, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+09:51 | 📍 Llegada: Francisco Rivera (DNI: 82362587) , Hora 09:51
+09:51 | 🛂 Mostrador 1: Pasajero 28345678 ingresó al mostrador. Tiempo de espera: 20 minutos
+09:53 | 📍 Llegada: Paula Gutiérrez (DNI: 80123456) , Hora 09:53
+09:55 | 📍 Llegada: Javier Gutiérrez (DNI: 92926563) , Hora 09:55
+09:56 | 📍 Llegada: Agustina Fernández (DNI: 62123456) , Hora 09:56
+09:58 | 📍 Llegada: Emilia Silva (DNI: 51123456) , Hora 09:58
+09:58 | 🛂 Mostrador 2: Pasajero 38123456 ingresó al mostrador. Tiempo de espera: 17 minutos
+09:58 | 🛂 Mostrador 1: Pasajero 69345678 ingresó al mostrador. Tiempo de espera: 21 minutos
+09:58 | ✅ Checkin: Pasajero 28345678, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+09:58 | 🛂 Mostrador 1: Pasajero 49123456 ingresó al mostrador. Tiempo de espera: 16 minutos
+10:00 | 📍 Llegada: Diego Flores (DNI: 30234567) , Hora 10:00
+10:00 | ✅ Checkin: Pasajero 38123456, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+10:05 | 📍 Llegada: Silvia Serrano (DNI: 56738776) , Hora 10:05
+10:08 | ✅ Checkin: Pasajero 49123456, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+10:08 | 🛂 Mostrador 2: Pasajero 52345678 ingresó al mostrador. Tiempo de espera: 22 minutos
+10:08 | 🛂 Mostrador 1: Pasajero 42345678 ingresó al mostrador. Tiempo de espera: 23 minutos
+10:08 | ✅ Checkin: Pasajero 69345678, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+10:08 | 🛂 Mostrador 1: Pasajero 67345678 ingresó al mostrador. Tiempo de espera: 21 minutos
+10:09 | ✈️ Embarque: Vuelo AA789 CERRADO 
+10:09 | ✈️ Salida: Vuelo AA789 en Despegue...
+10:10 | 📍 Llegada: Esteban Delgado (DNI: 13501786) , Hora 10:10
+10:10 | ✈️ Embarque: Iniciando  AA790
+10:10 | ✔ Vuelo AA790 , Embarque de Pasajero 39015168, en la Zona 0:
+10:10 | ✔ Vuelo AA790 , Embarque de Pasajero 35345678, en la Zona 2:
+10:11 | ✔ Vuelo AA790 , Embarque de Pasajero 38123456, en la Zona 0:
+10:11 | ✔ Vuelo AA790 , Embarque de Pasajero 77345678, en la Zona 3:
+10:11 | ✔ Vuelo AA790 , Embarque de Pasajero 59345678, en la Zona 2:
+10:11 | ✔ Vuelo AA790 , Embarque de Pasajero 56345678, en la Zona 1:
+10:11 | ✔ Vuelo AA790 , Embarque de Pasajero 69345678, en la Zona 3:
+10:12 | ✈️ Carga : Capacidad: AA790 2200.00 kg | 130.00 m3
+10:12 | ✅ Carga : Vuelo AA790, Asignada: 4 items | Total: 2200.00 kg, 130.00 m3
+10:12 | ⚠️ Carga : Vuelo AA790, Fuera de la aeronave: 1 items
+10:13 | ⚠️ Despague AA790 potencialmente en conflicto con edificio entre 550.0 y 595.0 (altura: 650.0)
+10:13 | ⚠️ Salida: Vuelo INSEGURO AA790, Altura : 612 metros, esperando condiciones seguras...
+10:13 | ✅ Checkin: Pasajero 42345678, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+10:13 | ⚠️ Despague AA790 potencialmente en conflicto con edificio entre 450.0 y 465.0 (altura: 550.0)
+10:13 | ⚠️ Salida: Vuelo INSEGURO AA790, Altura : 546 metros, esperando condiciones seguras...
+10:14 | ✈️ Salida: Vuelo Seguro AA790, Altura: 740 metros
+10:14 | ✅ Check-in abierto para el vuelo AA888
+10:14 | 📍 Llegada: Pablo Ortiz (DNI: 38025394) , Hora 10:14
+10:14 | 🔍 Buscando pasajeros del vuelo AA888...
+10:14 | 🧍 12 pasajeros encontrados para el vuelo AA888
+10:15 | ✅ Checkin: Pasajero 67345678, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+10:15 | 🛂 Mostrador 1: Pasajero 57123456 ingresó al mostrador. Tiempo de espera: 25 minutos
+10:15 | ✅ Checkin: Pasajero 52345678, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+10:15 | 🛂 Mostrador 1: Pasajero 82362587 ingresó al mostrador. Tiempo de espera: 24 minutos
+10:18 | 📍 Llegada: Sergio Domínguez (DNI: 39999266) , Hora 10:18
+10:19 | ✅ Checkin: Pasajero 82362587, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+10:19 | 🛂 Mostrador 1: Pasajero 80123456 ingresó al mostrador. Tiempo de espera: 26 minutos
+10:20 | 📍 Llegada: Florencia Delgado (DNI: 96123456) , Hora 10:20
+10:23 | 📍 Llegada: Facundo Reyes (DNI: 81345678) , Hora 10:23
+10:23 | ✅ Checkin: Pasajero 57123456, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+10:23 | 🛂 Mostrador 1: Pasajero 92926563 ingresó al mostrador. Tiempo de espera: 28 minutos
+10:25 | 📍 Llegada: Sebastián Rivas (DNI: 51346225) , Hora 10:25
+10:28 | ✅ Checkin: Pasajero 92926563, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+10:28 | 🛂 Mostrador 1: Pasajero 62123456 ingresó al mostrador. Tiempo de espera: 32 minutos
+10:27 | 📍 Llegada: Matías Fernández (DNI: 20784562) , Hora 10:27
+10:29 | ✅ Checkin: Pasajero 80123456, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+10:30 | 🛂 Mostrador 1: Pasajero 51123456 ingresó al mostrador. Tiempo de espera: 32 minutos
+10:31 | 📍 Llegada: Sofía Herrera (DNI: 74123456) , Hora 10:31
+10:33 | ✅ Checkin: Pasajero 62123456, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+10:33 | ✅ Checkin: Pasajero 51123456, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+10:33 | 🛂 Mostrador 1: Pasajero 56738776 ingresó al mostrador. Tiempo de espera: 28 minutos
+10:33 | 🛂 Mostrador 1: Pasajero 30234567 ingresó al mostrador. Tiempo de espera: 33 minutos
+10:33 | 📍 Llegada: Emilio Muñoz (DNI: 70130024) , Hora 10:33
+10:33 | 🛂 Mostrador 1: Pasajero 13501786 ingresó al mostrador. Tiempo de espera: 23 minutos
+10:33 | 📍 Llegada: Cecilia Bravo (DNI: 45123456) , Hora 10:33
+10:35 | ✈️ Embarque: Iniciando  AA799
+10:35 | ✔ Vuelo AA799 , Embarque de Pasajero 62123456, en la Zona 0:
+10:35 | ✔ Vuelo AA799 , Embarque de Pasajero 80123456, en la Zona 1:
+10:35 | ✔ Vuelo AA799 , Embarque de Pasajero 52345678, en la Zona 1:
+10:35 | ✅ Checkin: Pasajero 56738776, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+10:35 | 🛂 Mostrador 1: Pasajero 38025394 ingresó al mostrador. Tiempo de espera: 21 minutos
+10:35 | ✔ Vuelo AA799 , Embarque de Pasajero 57123456, en la Zona 3:
+10:36 | ✔ Vuelo AA799 , Embarque de Pasajero 49123456, en la Zona 3:
+10:36 | ✔ Vuelo AA799 , Embarque de Pasajero 70130024, en la Zona 2:
+10:36 | ✈️ Carga : Capacidad: AA799 2400.00 kg | 140.00 m3
+10:36 | ✅ Carga : Vuelo AA799, Asignada: 2 items | Total: 2400.00 kg, 140.00 m3
+10:37 | ⚠️ Carga : Vuelo AA799, Fuera de la aeronave: 3 items
+10:37 | ⚠️ Despague AA799 potencialmente en conflicto con edificio entre 450.0 y 465.0 (altura: 550.0)
+10:37 | ⚠️ Salida: Vuelo INSEGURO AA799, Altura : 519 metros, esperando condiciones seguras...
+10:37 | ✈️ Salida: Vuelo Seguro AA799, Altura: 739 metros
+10:38 | 📍 Llegada: Florencia Rodríguez (DNI: 64123456) , Hora 10:38
+10:38 | ✅ Checkin: Pasajero 38025394, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+10:38 | 🛂 Mostrador 1: Pasajero 39999266 ingresó al mostrador. Tiempo de espera: 20 minutos
+10:40 | ✅ Checkin: Pasajero 30234567, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+10:40 | 🛂 Mostrador 1: Pasajero 96123456 ingresó al mostrador. Tiempo de espera: 20 minutos
+10:41 | 📍 Llegada: Sergio Morales (DNI: 50761880) , Hora 10:41
+10:41 | ✅ Checkin: Pasajero 13501786, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+10:41 | 🛂 Mostrador 1: Pasajero 81345678 ingresó al mostrador. Tiempo de espera: 18 minutos
+10:44 | 📍 Llegada: Emiliano Romero (DNI: 95345678) , Hora 10:44
+10:46 | 📍 Llegada: Agustín Ramírez (DNI: 28345678) , Hora 10:46
+10:47 | ✅ Checkin: Pasajero 39999266, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+10:47 | 🛂 Mostrador 1: Pasajero 51346225 ingresó al mostrador. Tiempo de espera: 22 minutos
+10:49 | ✅ Checkin: Pasajero 96123456, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+10:49 | 🛂 Mostrador 1: Pasajero 20784562 ingresó al mostrador. Tiempo de espera: 22 minutos
+10:50 | ✅ Checkin: Pasajero 81345678, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+10:50 | 📍 Llegada: Martín Lara (DNI: 94123456) , Hora 10:50
+10:50 | 🛂 Mostrador 1: Pasajero 74123456 ingresó al mostrador. Tiempo de espera: 19 minutos
+10:52 | ✅ Checkin: Pasajero 51346225, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+10:52 | 🛂 Mostrador 1: Pasajero 70130024 ingresó al mostrador. Tiempo de espera: 19 minutos
+10:53 | ✅ Checkin: Pasajero 20784562, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+10:53 | 🛂 Mostrador 1: Pasajero 45123456 ingresó al mostrador. Tiempo de espera: 20 minutos
+10:55 | 📍 Llegada: Sergio Pérez (DNI: 34567890) , Hora 10:55
+10:57 | ✅ Checkin: Pasajero 74123456, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+10:57 | 🛂 Mostrador 1: Pasajero 64123456 ingresó al mostrador. Tiempo de espera: 19 minutos
+10:58 | 📍 Llegada: Camila Silva (DNI: 90123456) , Hora 10:58
+11:01 | ✅ Checkin: Pasajero 64123456, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+11:01 | 🛂 Mostrador 1: Pasajero 50761880 ingresó al mostrador. Tiempo de espera: 20 minutos
+11:01 | ✅ Checkin: Pasajero 45123456, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+11:01 | 🛂 Mostrador 1: Pasajero 95345678 ingresó al mostrador. Tiempo de espera: 17 minutos
+11:01 | ✅ Checkin: Pasajero 70130024, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+11:01 | 🛂 Mostrador 1: Pasajero 28345678 ingresó al mostrador. Tiempo de espera: 15 minutos
+11:02 | ✅ Check-in abierto para el vuelo AA801
+11:02 | 🔍 Buscando pasajeros del vuelo AA801...
+11:02 | 🧍 11 pasajeros encontrados para el vuelo AA801
+11:02 | 📍 Llegada: Carolina Moreno (DNI: 11295354) , Hora 11:02
+11:02 | 🛂 Mostrador 1: Pasajero 94123456 ingresó al mostrador. Tiempo de espera: 12 minutos
+11:03 | ✅ Checkin: Pasajero 95345678, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+11:04 | 🛂 Mostrador 1: Pasajero 34567890 ingresó al mostrador. Tiempo de espera: 9 minutos
+11:05 | ✅ Checkin: Pasajero 28345678, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+11:05 | 🛂 Mostrador 1: Pasajero 90123456 ingresó al mostrador. Tiempo de espera: 7 minutos
+11:08 | 📍 Llegada: Sofía Paredes (DNI: 97345678) , Hora 11:08
+11:09 | ✅ Checkin: Pasajero 50761880, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+11:09 | 🛂 Mostrador 1: Pasajero 11295354 ingresó al mostrador. Tiempo de espera: 7 minutos
+11:10 | ✈️ Embarque: Vuelo AA790 CERRADO 
+11:10 | ✈️ Salida: Vuelo AA790 en Despegue...
+11:10 | ✅ Checkin: Pasajero 34567890, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+11:10 | 🛂 Mostrador 1: Pasajero 97345678 ingresó al mostrador. Tiempo de espera: 2 minutos
+11:12 | ✈️ Embarque: Iniciando  AA888
+11:12 | ✔ Vuelo AA888 , Embarque de Pasajero 28345678, en la Zona 1:
+11:12 | 📍 Llegada: Diego Silva (DNI: 98123456) , Hora 11:12
+11:12 | ✔ Vuelo AA888 , Embarque de Pasajero 64123456, en la Zona 1:
+11:12 | ✔ Vuelo AA888 , Embarque de Pasajero 95345678, en la Zona 2:
+11:12 | ✔ Vuelo AA888 , Embarque de Pasajero 28345678, en la Zona 1:
+11:13 | ✅ Checkin: Pasajero 94123456, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+11:13 | 🛂 Mostrador 1: Pasajero 98123456 ingresó al mostrador. Tiempo de espera: 1 minutos
+11:12 | ✔ Vuelo AA888 , Embarque de Pasajero 20784562, en la Zona 2:
+11:13 | ✔ Vuelo AA888 , Embarque de Pasajero 45123456, en la Zona 3:
+11:13 | ✔ Vuelo AA888 , Embarque de Pasajero 81345678, en la Zona 3:
+11:13 | ✔ Vuelo AA888 , Embarque de Pasajero 39999266, en la Zona 3:
+11:13 | ✔ Vuelo AA888 , Embarque de Pasajero 50761880, en la Zona 1:
+11:14 | ✈️ Carga : Capacidad: AA888 2100.00 kg | 110.00 m3
+11:14 | ✅ Carga : Vuelo AA888, Asignada: 4 items | Total: 2100.00 kg, 110.00 m3
+11:14 | ✅ Checkin: Pasajero 90123456, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+11:14 | ✅ Checkin: Pasajero 97345678, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+11:14 | ⚠️ Carga : Vuelo AA888, Fuera de la aeronave: 0 items
+11:14 | ✈️ Salida: Vuelo Seguro AA888, Altura: 725 metros
+11:14 | 📍 Llegada: Martina Paz (DNI: 46345678) , Hora 11:14
+11:19 | ✅ Checkin: Pasajero 11295354, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+11:19 | 🛂 Mostrador 1: Pasajero 46345678 ingresó al mostrador. Tiempo de espera: 5 minutos
+11:19 | ✅ Checkin: Pasajero 98123456, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+11:20 | 📍 Llegada: Miguel Gómez (DNI: 98765432) , Hora 11:20
+11:23 | 📍 Llegada: Joaquín Gutiérrez (DNI: 20756213) , Hora 11:23
+11:28 | 📍 Llegada: Ana Pérez (DNI: 23456789) , Hora 11:28
+11:29 | ✅ Checkin: Pasajero 46345678, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+11:29 | 🛂 Mostrador 1: Pasajero 98765432 ingresó al mostrador. Tiempo de espera: 9 minutos
+11:31 | 📍 Llegada: Lucía Vargas (DNI: 86123456) , Hora 11:31
+11:35 | ✈️ Embarque: Vuelo AA799 CERRADO 
+11:35 | ✈️ Salida: Vuelo AA799 en Despegue...
+11:36 | 📍 Llegada: Lucía Morales (DNI: 33123456) , Hora 11:36
+11:39 | 📍 Llegada: Emilia Gómez (DNI: 60123456) , Hora 11:39
+11:38 | ✅ Checkin: Pasajero 98765432, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+11:39 | 🛂 Mostrador 1: Pasajero 20756213 ingresó al mostrador. Tiempo de espera: 16 minutos
+11:41 | 📍 Llegada: Javier Vázquez (DNI: 97994551) , Hora 11:41
+11:47 | ✅ Checkin: Pasajero 20756213, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+11:47 | 🛂 Mostrador 1: Pasajero 23456789 ingresó al mostrador. Tiempo de espera: 19 minutos
+11:48 | 📍 Llegada: Antonella Ruiz (DNI: 76123456) , Hora 11:48
+11:48 | 🛂 Mostrador 1: Pasajero 86123456 ingresó al mostrador. Tiempo de espera: 17 minutos
+11:51 | ✅ Checkin: Pasajero 23456789, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+11:52 | 🛂 Mostrador 1: Pasajero 33123456 ingresó al mostrador. Tiempo de espera: 16 minutos
+11:55 | ✅ Checkin: Pasajero 86123456, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+11:56 | 🛂 Mostrador 1: Pasajero 60123456 ingresó al mostrador. Tiempo de espera: 17 minutos
+12:00 | ✈️ Embarque: Vuelo AA888 CERRADO 
+12:00 | ✈️ Salida: Vuelo AA888 en Despegue...
+12:00 | ✅ Checkin: Pasajero 33123456, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+12:01 | 🛂 Mostrador 1: Pasajero 97994551 ingresó al mostrador. Tiempo de espera: 20 minutos
+12:01 | ✈️ Embarque: Iniciando  AA801
+12:01 | ✔ Vuelo AA801 , Embarque de Pasajero 98123456, en la Zona 0:
+12:01 | ✔ Vuelo AA801 , Embarque de Pasajero 98765432, en la Zona 0:
+12:01 | ✔ Vuelo AA801 , Embarque de Pasajero 46345678, en la Zona 0:
+12:01 | ✔ Vuelo AA801 , Embarque de Pasajero 97345678, en la Zona 3:
+12:02 | ✔ Vuelo AA801 , Embarque de Pasajero 20756213, en la Zona 1:
+12:02 | ✔ Vuelo AA801 , Embarque de Pasajero 86123456, en la Zona 0:
+12:02 | ✔ Vuelo AA801 , Embarque de Pasajero 33123456, en la Zona 3:
+12:02 | ✈️ Carga : Capacidad: AA801 2300.00 kg | 125.00 m3
+12:03 | ✅ Carga : Vuelo AA801, Asignada: 5 items | Total: 2300.00 kg, 125.00 m3
+12:03 | ⚠️ Carga : Vuelo AA801, Fuera de la aeronave: 0 items
+12:03 | ⚠️ Despague AA801 potencialmente en conflicto con edificio entre 350.0 y 390.0 (altura: 450.0)
+12:03 | ⚠️ Salida: Vuelo INSEGURO AA801, Altura : 439 metros, esperando condiciones seguras...
+12:03 | ✅ Check-in abierto para el vuelo AA811
+12:03 | 🔍 Buscando pasajeros del vuelo AA811...
+12:03 | ⚠️ Despague AA801 potencialmente en conflicto con edificio entre 550.0 y 595.0 (altura: 650.0)
+12:03 | ⚠️ Salida: Vuelo INSEGURO AA801, Altura : 641 metros, esperando condiciones seguras...
+12:03 | ⚠️ Despague AA801 potencialmente en conflicto con edificio entre 450.0 y 465.0 (altura: 550.0)
+12:04 | ⚠️ Salida: Vuelo INSEGURO AA801, Altura : 543 metros, esperando condiciones seguras...
+12:04 | ⚠️ Despague AA801 potencialmente en conflicto con edificio entre 350.0 y 390.0 (altura: 450.0)
+12:04 | ✅ Checkin: Pasajero 60123456, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+12:04 | ⚠️ Salida: Vuelo INSEGURO AA801, Altura : 429 metros, esperando condiciones seguras...
+12:04 | 🛂 Mostrador 1: Pasajero 76123456 ingresó al mostrador. Tiempo de espera: 16 minutos
+12:04 | ⚠️ Despague AA801 potencialmente en conflicto con edificio entre 350.0 y 390.0 (altura: 450.0)
+12:04 | ⚠️ Salida: Vuelo INSEGURO AA801, Altura : 435 metros, esperando condiciones seguras...
+12:04 | ✈️ Salida: Vuelo Seguro AA801, Altura: 687 metros
+12:03 | 🧍 13 pasajeros encontrados para el vuelo AA811
+12:08 | ✅ Checkin: Pasajero 97994551, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+12:08 | 📍 Llegada: Pablo Pérez (DNI: 89268762) , Hora 12:08
+12:12 | 📍 Llegada: Sergio Gallego (DNI: 45133768) , Hora 12:12
+12:12 | ✅ Checkin: Pasajero 76123456, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+12:13 | 🛂 Mostrador 1: Pasajero 89268762 ingresó al mostrador. Tiempo de espera: 5 minutos
+12:15 | 📍 Llegada: Sofía Molina (DNI: 53123456) , Hora 12:15
+12:15 | ✅ Checkin: Pasajero 89268762, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+12:15 | 🛂 Mostrador 1: Pasajero 45133768 ingresó al mostrador. Tiempo de espera: 3 minutos
+12:20 | 📍 Llegada: Ricardo Gallego (DNI: 54265548) , Hora 12:20
+12:21 | ✅ Checkin: Pasajero 45133768, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+12:22 | 🛂 Mostrador 1: Pasajero 53123456 ingresó al mostrador. Tiempo de espera: 7 minutos
+12:25 | 📍 Llegada: Ignacio Campos (DNI: 89345678) , Hora 12:25
+12:29 | 📍 Llegada: María Gómez (DNI: 87654321) , Hora 12:29
+12:31 | ✅ Checkin: Pasajero 53123456, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+12:31 | 🛂 Mostrador 1: Pasajero 54265548 ingresó al mostrador. Tiempo de espera: 11 minutos
+12:32 | 📍 Llegada: Sergio Hernández (DNI: 86220902) , Hora 12:32
+12:36 | 📍 Llegada: Adriana Silva (DNI: 95975858) , Hora 12:36
+12:39 | 📍 Llegada: Gabriel Domínguez (DNI: 38323957) , Hora 12:39
+12:41 | ✅ Checkin: Pasajero 54265548, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+12:41 | 🛂 Mostrador 1: Pasajero 89345678 ingresó al mostrador. Tiempo de espera: 16 minutos
+12:42 | 📍 Llegada: Benjamín Medina (DNI: 87345678) , Hora 12:42
+12:44 | ✅ Checkin: Pasajero 89345678, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+12:44 | 🛂 Mostrador 1: Pasajero 87654321 ingresó al mostrador. Tiempo de espera: 15 minutos
+12:46 | 📍 Llegada: Ignacio Morales (DNI: 25171411) , Hora 12:46
+12:47 | ✅ Checkin: Pasajero 87654321, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+12:48 | 🛂 Mostrador 1: Pasajero 86220902 ingresó al mostrador. Tiempo de espera: 16 minutos
+12:52 | 📍 Llegada: Florencia Díaz (DNI: 27567890) , Hora 12:52
+12:53 | ✅ Checkin: Pasajero 86220902, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+12:53 | 🛂 Mostrador 1: Pasajero 95975858 ingresó al mostrador. Tiempo de espera: 17 minutos
+12:56 | 📍 Llegada: Ricardo Gallego (DNI: 75208878) , Hora 12:56
+12:57 | 🛂 Mostrador 1: Pasajero 38323957 ingresó al mostrador. Tiempo de espera: 18 minutos
+12:57 | ✅ Checkin: Pasajero 95975858, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+12:57 | 🛂 Mostrador 1: Pasajero 87345678 ingresó al mostrador. Tiempo de espera: 15 minutos
+13:00 | ✅ Checkin: Pasajero 38323957, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+13:00 | 🛂 Mostrador 1: Pasajero 25171411 ingresó al mostrador. Tiempo de espera: 14 minutos
+13:01 | ✈️ Embarque: Vuelo AA801 CERRADO 
+13:01 | ✈️ Salida: Vuelo AA801 en Despegue...
+13:02 | ✈️ Embarque: Iniciando  AA811
+13:02 | ✔ Vuelo AA811 , Embarque de Pasajero 95975858, en la Zona 0:
+13:02 | ✔ Vuelo AA811 , Embarque de Pasajero 38323957, en la Zona 0:
+13:02 | ✔ Vuelo AA811 , Embarque de Pasajero 45133768, en la Zona 3:
+13:02 | ✔ Vuelo AA811 , Embarque de Pasajero 86220902, en la Zona 2:
+13:02 | ✔ Vuelo AA811 , Embarque de Pasajero 87654321, en la Zona 2:
+13:03 | ✔ Vuelo AA811 , Embarque de Pasajero 89345678, en la Zona 3:
+13:03 | ✔ Vuelo AA811 , Embarque de Pasajero 45133768, en la Zona 3:
+13:03 | ✔ Vuelo AA811 , Embarque de Pasajero 53123456, en la Zona 3:
+13:03 | ✔ Vuelo AA811 , Embarque de Pasajero 89268762, en la Zona 3:
+13:03 | ✔ Vuelo AA811 , Embarque de Pasajero 54265548, en la Zona 3:
+13:03 | ✈️ Carga : Capacidad: AA811 2600.00 kg | 160.00 m3
+13:03 | ✅ Carga : Vuelo AA811, Asignada: 5 items | Total: 2600.00 kg, 160.00 m3
+13:03 | ⚠️ Carga : Vuelo AA811, Fuera de la aeronave: 0 items
+13:02 | ✅ Checkin: Pasajero 87345678, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+13:03 | 🛂 Mostrador 1: Pasajero 27567890 ingresó al mostrador. Tiempo de espera: 11 minutos
+13:03 | ⚠️ Despague AA811 potencialmente en conflicto con edificio entre 400.0 y 470.0 (altura: 500.0)
+13:03 | ⚠️ Salida: Vuelo INSEGURO AA811, Altura : 478 metros, esperando condiciones seguras...
+13:03 | ✅ Check-in abierto para el vuelo AA831
+13:03 | 🔍 Buscando pasajeros del vuelo AA831...
+13:03 | 🧍 13 pasajeros encontrados para el vuelo AA831
+13:03 | ⚠️ Despague AA811 potencialmente en conflicto con edificio entre 500.0 y 585.0 (altura: 600.0)
+13:03 | ⚠️ Salida: Vuelo INSEGURO AA811, Altura : 587 metros, esperando condiciones seguras...
+13:04 | ✈️ Salida: Vuelo Seguro AA811, Altura: 799 metros
+13:05 | ✅ Checkin: Pasajero 27567890, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+13:06 | ✅ Checkin: Pasajero 25171411, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+13:06 | 🛂 Mostrador 1: Pasajero 75208878 ingresó al mostrador. Tiempo de espera: 10 minutos
+13:07 | 📍 Llegada: Benjamín Pérez (DNI: 33903706) , Hora 13:07
+13:13 | 📍 Llegada: Joaquín Ortiz (DNI: 73345678) , Hora 13:13
+13:13 | ✅ Checkin: Pasajero 75208878, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+13:14 | 🛂 Mostrador 1: Pasajero 33903706 ingresó al mostrador. Tiempo de espera: 7 minutos
+13:15 | 📍 Llegada: Martín Castro (DNI: 36123456) , Hora 13:15
+13:20 | 📍 Llegada: Pablo Muñoz (DNI: 30784141) , Hora 13:20
+13:22 | ✅ Checkin: Pasajero 33903706, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+13:23 | 🛂 Mostrador 1: Pasajero 73345678 ingresó al mostrador. Tiempo de espera: 10 minutos
+13:24 | 📍 Llegada: Bruno Martínez (DNI: 63345678) , Hora 13:24
+13:27 | 📍 Llegada: Valentina Pérez (DNI: 66123456) , Hora 13:27
+13:30 | ✅ Checkin: Pasajero 73345678, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+13:31 | 🛂 Mostrador 1: Pasajero 36123456 ingresó al mostrador. Tiempo de espera: 16 minutos
+13:32 | 📍 Llegada: Florencia Navarro (DNI: 32596000) , Hora 13:32
+13:35 | ✅ Checkin: Pasajero 36123456, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+13:36 | 🛂 Mostrador 1: Pasajero 30784141 ingresó al mostrador. Tiempo de espera: 16 minutos
+13:36 | 📍 Llegada: Ana Pérez (DNI: 23456789) , Hora 13:36
+13:40 | 📍 Llegada: Ana Pérez (DNI: 23456789) , Hora 13:40
+13:41 | ✅ Checkin: Pasajero 30784141, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+13:41 | 🛂 Mostrador 1: Pasajero 63345678 ingresó al mostrador. Tiempo de espera: 17 minutos
+13:42 | 📍 Llegada: Emilia Cruz (DNI: 82123456) , Hora 13:42
+13:45 | 📍 Llegada: Julia Hernández (DNI: 47801927) , Hora 13:45
+13:47 | 📍 Llegada: Sabrina Gutiérrez (DNI: 41345678) , Hora 13:47
+13:50 | 📍 Llegada: Fernando Pérez (DNI: 34210087) , Hora 13:50
+13:50 | 🛂 Mostrador 1: Pasajero 66123456 ingresó al mostrador. Tiempo de espera: 23 minutos
+13:51 | ✅ Checkin: Pasajero 63345678, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+13:51 | 🛂 Mostrador 1: Pasajero 32596000 ingresó al mostrador. Tiempo de espera: 19 minutos
+13:57 | ✅ Checkin: Pasajero 32596000, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+13:57 | 🛂 Mostrador 1: Pasajero 23456789 ingresó al mostrador. Tiempo de espera: 21 minutos
+13:59 | ✅ Checkin: Pasajero 66123456, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+14:00 | 🛂 Mostrador 1: Pasajero 23456789 ingresó al mostrador. Tiempo de espera: 20 minutos
+14:02 | ✈️ Embarque: Vuelo AA811 CERRADO 
+14:02 | ✈️ Salida: Vuelo AA811 en Despegue...
+14:03 | ✈️ Embarque: Iniciando  AA831
+14:03 | ✔ Vuelo AA831 , Embarque de Pasajero 23456789, en la Zona 0:
+14:03 | ✔ Vuelo AA831 , Embarque de Pasajero 33903706, en la Zona 0:
+14:03 | ✔ Vuelo AA831 , Embarque de Pasajero 32596000, en la Zona 1:
+14:03 | ✔ Vuelo AA831 , Embarque de Pasajero 66123456, en la Zona 0:
+14:03 | ✔ Vuelo AA831 , Embarque de Pasajero 30784141, en la Zona 0:
+14:03 | ✔ Vuelo AA831 , Embarque de Pasajero 73345678, en la Zona 3:
+14:03 | ✅ Checkin: Pasajero 23456789, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+14:03 | 🛂 Mostrador 1: Pasajero 82123456 ingresó al mostrador. Tiempo de espera: 21 minutos
+14:03 | ✔ Vuelo AA831 , Embarque de Pasajero 63345678, en la Zona 2:
+14:03 | ✔ Vuelo AA831 , Embarque de Pasajero 36123456, en la Zona 1:
+14:04 | ✅ Checkin: Pasajero 23456789, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+14:04 | 🛂 Mostrador 1: Pasajero 47801927 ingresó al mostrador. Tiempo de espera: 19 minutos
+14:04 | ✔ Vuelo AA831 , Embarque de Pasajero 23456789, en la Zona 0:
+14:04 | ✈️ Carga : Capacidad: AA831 2250.00 kg | 135.00 m3
+14:04 | ✅ Carga : Vuelo AA831, Asignada: 3 items | Total: 2250.00 kg, 135.00 m3
+14:04 | ⚠️ Carga : Vuelo AA831, Fuera de la aeronave: 2 items
+14:04 | ✈️ Salida: Vuelo Seguro AA831, Altura: 750 metros
+14:05 | ✅ Check-in abierto para el vuelo AA841
+14:05 | 🔍 Buscando pasajeros del vuelo AA841...
+14:05 | 🧍 13 pasajeros encontrados para el vuelo AA841
+14:09 | 📍 Llegada: Gonzalo Reyes (DNI: 14898276) , Hora 14:09
+14:10 | ✅ Checkin: Pasajero 82123456, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+14:11 | ✅ Checkin: Pasajero 47801927, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+14:11 | 🛂 Mostrador 1: Pasajero 34210087 ingresó al mostrador. Tiempo de espera: 21 minutos
+14:10 | 🛂 Mostrador 1: Pasajero 41345678 ingresó al mostrador. Tiempo de espera: 23 minutos
+14:12 | 📍 Llegada: Nicolás Vega (DNI: 32345678) , Hora 14:12
+14:15 | ✅ Checkin: Pasajero 41345678, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+14:16 | 🛂 Mostrador 1: Pasajero 14898276 ingresó al mostrador. Tiempo de espera: 7 minutos
+14:17 | 📍 Llegada: Manuel Molina (DNI: 93362765) , Hora 14:17
+14:18 | ✅ Checkin: Pasajero 34210087, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+14:18 | 🛂 Mostrador 1: Pasajero 32345678 ingresó al mostrador. Tiempo de espera: 6 minutos
+14:22 | 📍 Llegada: Matías Navarro (DNI: 91345678) , Hora 14:22
+14:25 | ✅ Checkin: Pasajero 14898276, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+14:25 | 🛂 Mostrador 1: Pasajero 93362765 ingresó al mostrador. Tiempo de espera: 8 minutos
+14:26 | 📍 Llegada: Ignacio Sánchez (DNI: 78144735) , Hora 14:26
+14:27 | ✅ Checkin: Pasajero 32345678, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+14:27 | 🛂 Mostrador 1: Pasajero 91345678 ingresó al mostrador. Tiempo de espera: 5 minutos
+14:29 | ✅ Checkin: Pasajero 93362765, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+14:30 | 🛂 Mostrador 1: Pasajero 78144735 ingresó al mostrador. Tiempo de espera: 4 minutos
+14:31 | 📍 Llegada: Bruno Soto (DNI: 83345678) , Hora 14:31
+14:34 | ✅ Checkin: Pasajero 78144735, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+14:34 | 🛂 Mostrador 1: Pasajero 83345678 ingresó al mostrador. Tiempo de espera: 3 minutos
+14:34 | 📍 Llegada: Federico Flores (DNI: 15361036) , Hora 14:34
+14:35 | ✅ Checkin: Pasajero 91345678, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+14:35 | 🛂 Mostrador 1: Pasajero 15361036 ingresó al mostrador. Tiempo de espera: 1 minutos
+14:38 | 📍 Llegada: Adriana Morales (DNI: 30237009) , Hora 14:38
+14:39 | ✅ Checkin: Pasajero 15361036, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+14:39 | 🛂 Mostrador 1: Pasajero 30237009 ingresó al mostrador. Tiempo de espera: 1 minutos
+14:42 | ✅ Checkin: Pasajero 30237009, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+14:43 | ✅ Checkin: Pasajero 83345678, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+14:43 | 📍 Llegada: Mariana Reyes (DNI: 66847427) , Hora 14:43
+14:48 | 📍 Llegada: Nicolás Silva (DNI: 79345678) , Hora 14:48
+14:52 | 📍 Llegada: Natalia González (DNI: 69389237) , Hora 14:52
+14:57 | 📍 Llegada: Emilia Cruz (DNI: 82123456) , Hora 14:57
+15:01 | 📍 Llegada: José García (DNI: 33445566) , Hora 15:01
+15:01 | 🛂 Mostrador 1: Pasajero 66847427 ingresó al mostrador. Tiempo de espera: 18 minutos
+15:03 | ✈️ Embarque: Vuelo AA831 CERRADO 
+15:03 | ✈️ Salida: Vuelo AA831 en Despegue...
+15:04 | ✈️ Embarque: Iniciando  AA841
+15:04 | ✔ Vuelo AA841 , Embarque de Pasajero 82123456, en la Zona 0:
+15:04 | ✔ Vuelo AA841 , Embarque de Pasajero 14898276, en la Zona 1:
+15:04 | ✔ Vuelo AA841 , Embarque de Pasajero 15361036, en la Zona 0:
+15:05 | ✅ Check-in abierto para el vuelo AA855
+15:05 | 🔍 Buscando pasajeros del vuelo AA855...
+15:05 | 🧍 12 pasajeros encontrados para el vuelo AA855
+15:05 | ✔ Vuelo AA841 , Embarque de Pasajero 30237009, en la Zona 1:
+15:05 | ✅ Checkin: Pasajero 66847427, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+15:06 | 🛂 Mostrador 1: Pasajero 79345678 ingresó al mostrador. Tiempo de espera: 18 minutos
+15:05 | ✔ Vuelo AA841 , Embarque de Pasajero 78144735, en la Zona 2:
+15:06 | ✔ Vuelo AA841 , Embarque de Pasajero 91345678, en la Zona 2:
+15:06 | ✔ Vuelo AA841 , Embarque de Pasajero 32345678, en la Zona 1:
+15:07 | ✔ Vuelo AA841 , Embarque de Pasajero 93362765, en la Zona 2:
+15:07 | ✈️ Carga : Capacidad: AA841 2450.00 kg | 145.00 m3
+15:07 | ✅ Carga : Vuelo AA841, Asignada: 3 items | Total: 2450.00 kg, 145.00 m3
+15:08 | 📍 Llegada: Ignacio Vargas (DNI: 47123456) , Hora 15:08
+15:07 | ⚠️ Carga : Vuelo AA841, Fuera de la aeronave: 2 items
+15:08 | ✈️ Salida: Vuelo Seguro AA841, Altura: 685 metros
+15:11 | 📍 Llegada: Isabella Díaz (DNI: 68123456) , Hora 15:11
+15:14 | ✅ Checkin: Pasajero 79345678, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+15:14 | 🛂 Mostrador 1: Pasajero 69389237 ingresó al mostrador. Tiempo de espera: 22 minutos
+15:16 | 📍 Llegada: Lucas Vega (DNI: 71345678) , Hora 15:16
+15:20 | 📍 Llegada: Camila Torres (DNI: 70123456) , Hora 15:20
+15:23 | ✅ Checkin: Pasajero 69389237, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+15:23 | 🛂 Mostrador 1: Pasajero 82123456 ingresó al mostrador. Tiempo de espera: 26 minutos
+15:25 | 📍 Llegada: Camila Ruiz (DNI: 37567890) , Hora 15:25
+15:26 | ✅ Checkin: Pasajero 82123456, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+15:27 | 🛂 Mostrador 1: Pasajero 33445566 ingresó al mostrador. Tiempo de espera: 26 minutos
+15:32 | 📍 Llegada: Andrea Rojas (DNI: 57770607) , Hora 15:32
+15:36 | ✅ Checkin: Pasajero 33445566, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+15:36 | 🛂 Mostrador 1: Pasajero 47123456 ingresó al mostrador. Tiempo de espera: 28 minutos
+15:36 | 📍 Llegada: Daniela Moreno (DNI: 92465250) , Hora 15:36
+15:41 | 📍 Llegada: Juan Rodríguez (DNI: 24678901) , Hora 15:41
+15:42 | ✅ Check-in abierto para el vuelo AA866
+15:43 | 🔍 Buscando pasajeros del vuelo AA866...
+15:43 | 🧍 13 pasajeros encontrados para el vuelo AA866
+15:45 | 📍 Llegada: Martín Paredes (DNI: 58345678) , Hora 15:45
+15:46 | ✅ Checkin: Pasajero 47123456, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+15:46 | 🛂 Mostrador 1: Pasajero 68123456 ingresó al mostrador. Tiempo de espera: 35 minutos
+15:46 | 📍 Llegada: Sofía González (DNI: 20451234) , Hora 15:46
+15:49 | 📍 Llegada: Ignacio Rojas (DNI: 61345678) , Hora 15:49
+15:50 | 📍 Llegada: Sergio Sánchez (DNI: 71197153) , Hora 15:50
+15:50 | ✅ Checkin: Pasajero 68123456, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+15:50 | 🛂 Mostrador 1: Pasajero 71345678 ingresó al mostrador. Tiempo de espera: 34 minutos
+15:53 | ✅ Checkin: Pasajero 71345678, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+15:53 | 🛂 Mostrador 1: Pasajero 70123456 ingresó al mostrador. Tiempo de espera: 33 minutos
+15:53 | 📍 Llegada: Diego Castro (DNI: 75345678) , Hora 15:53
+15:55 | 📍 Llegada: Martín Castillo (DNI: 39015168) , Hora 15:55
+15:55 | ✅ Checkin: Pasajero 70123456, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+15:55 | 🛂 Mostrador 1: Pasajero 37567890 ingresó al mostrador. Tiempo de espera: 30 minutos
+15:58 | 📍 Llegada: Martina Paz (DNI: 46345678) , Hora 15:58
+16:00 | 📍 Llegada: Florencia Delgado (DNI: 96123456) , Hora 16:00
+16:00 | 🛂 Mostrador 1: Pasajero 57770607 ingresó al mostrador. Tiempo de espera: 28 minutos
+16:00 | 🛂 Mostrador 2: Pasajero 92465250 ingresó al mostrador. Tiempo de espera: 24 minutos
+16:04 | ✈️ Embarque: Vuelo AA841 CERRADO 
+16:04 | ✈️ Salida: Vuelo AA841 en Despegue...
+16:03 | 📍 Llegada: Juan Pérez (DNI: 12345678) , Hora 16:03
+16:04 | ✅ Checkin: Pasajero 57770607, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+16:04 | ✅ Checkin: Pasajero 37567890, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+16:04 | 🛂 Mostrador 1: Pasajero 24678901 ingresó al mostrador. Tiempo de espera: 23 minutos
+16:05 | ✈️ Embarque: Iniciando  AA855
+16:05 | ✔ Vuelo AA855 , Embarque de Pasajero 70123456, en la Zona 0:
+16:05 | ✔ Vuelo AA855 , Embarque de Pasajero 96123456, en la Zona 1:
+16:05 | ✔ Vuelo AA855 , Embarque de Pasajero 68123456, en la Zona 1:
+16:05 | ✔ Vuelo AA855 , Embarque de Pasajero 71345678, en la Zona 2:
+16:06 | ✔ Vuelo AA855 , Embarque de Pasajero 47123456, en la Zona 2:
+16:06 | ✔ Vuelo AA855 , Embarque de Pasajero 37567890, en la Zona 3:
+16:06 | ✅ Checkin: Pasajero 24678901, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+16:06 | 🛂 Mostrador 1: Pasajero 58345678 ingresó al mostrador. Tiempo de espera: 21 minutos
+16:06 | ✔ Vuelo AA855 , Embarque de Pasajero 57770607, en la Zona 2:
+16:06 | ✈️ Carga : Capacidad: AA855 2150.00 kg | 120.00 m3
+16:07 | ✅ Carga : Vuelo AA855, Asignada: 3 items | Total: 2150.00 kg, 120.00 m3
+16:07 | ⚠️ Carga : Vuelo AA855, Fuera de la aeronave: 2 items
+16:07 | 📍 Llegada: Sebastián Prieto (DNI: 63165423) , Hora 16:07
+16:07 | ✈️ Salida: Vuelo Seguro AA855, Altura: 793 metros
+16:08 | ✅ Checkin: Pasajero 92465250, hizo check-in exitoso. Tiempo del tramite: 8 minutos
+16:08 | ✅ Checkin: Pasajero 58345678, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+16:08 | 🛂 Mostrador 1: Pasajero 61345678 ingresó al mostrador. Tiempo de espera: 19 minutos
+16:08 | 🛂 Mostrador 1: Pasajero 20451234 ingresó al mostrador. Tiempo de espera: 22 minutos
+16:10 | ✅ Checkin: Pasajero 20451234, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+16:11 | 🛂 Mostrador 1: Pasajero 71197153 ingresó al mostrador. Tiempo de espera: 21 minutos
+16:13 | 📍 Llegada: Mía Morales (DNI: 72123456) , Hora 16:13
+16:13 | ✅ Checkin: Pasajero 61345678, hizo check-in exitoso. Tiempo del tramite: 5 minutos
+16:14 | 🛂 Mostrador 1: Pasajero 75345678 ingresó al mostrador. Tiempo de espera: 21 minutos
+16:17 | ✅ Checkin: Pasajero 71197153, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+16:18 | 🛂 Mostrador 1: Pasajero 39015168 ingresó al mostrador. Tiempo de espera: 23 minutos
+16:18 | ✅ Checkin: Pasajero 75345678, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+16:19 | 📍 Llegada: Santiago López (DNI: 65345678) , Hora 16:19
+16:19 | 🛂 Mostrador 1: Pasajero 46345678 ingresó al mostrador. Tiempo de espera: 21 minutos
+16:24 | 📍 Llegada: Julieta Mendoza (DNI: 78123456) , Hora 16:24
+16:24 | ✅ Checkin: Pasajero 39015168, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+16:24 | 🛂 Mostrador 1: Pasajero 96123456 ingresó al mostrador. Tiempo de espera: 24 minutos
+16:26 | ✅ Checkin: Pasajero 46345678, hizo check-in exitoso. Tiempo del tramite: 7 minutos
+16:27 | 🛂 Mostrador 1: Pasajero 12345678 ingresó al mostrador. Tiempo de espera: 24 minutos
+16:29 | 📍 Llegada: Florencia Cruz (DNI: 94095649) , Hora 16:29
+16:30 | ✅ Checkin: Pasajero 12345678, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+16:31 | 🛂 Mostrador 1: Pasajero 63165423 ingresó al mostrador. Tiempo de espera: 24 minutos
+16:31 | ✅ Checkin: Pasajero 96123456, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+16:32 | 🛂 Mostrador 1: Pasajero 72123456 ingresó al mostrador. Tiempo de espera: 19 minutos
+16:34 | 📍 Llegada: Ignacio Navarro (DNI: 47287448) , Hora 16:34
+16:35 | ✅ Checkin: Pasajero 63165423, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+16:35 | 🛂 Mostrador 1: Pasajero 65345678 ingresó al mostrador. Tiempo de espera: 16 minutos
+16:38 | 📍 Llegada: Lucas Martínez (DNI: 22345678) , Hora 16:38
+16:38 | ✅ Checkin: Pasajero 65345678, hizo check-in exitoso. Tiempo del tramite: 3 minutos
+16:38 | 🛂 Mostrador 1: Pasajero 78123456 ingresó al mostrador. Tiempo de espera: 14 minutos
+16:41 | 📍 Llegada: Florencia Muñoz (DNI: 67671097) , Hora 16:41
+16:41 | 🛂 Mostrador 1: Pasajero 94095649 ingresó al mostrador. Tiempo de espera: 12 minutos
+16:41 | ✅ Checkin: Pasajero 72123456, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+16:41 | 🛂 Mostrador 1: Pasajero 47287448 ingresó al mostrador. Tiempo de espera: 7 minutos
+16:42 | ✈️ Embarque: Iniciando  AA866
+16:42 | ✔ Vuelo AA866 , Embarque de Pasajero 72123456, en la Zona 1:
+16:42 | ✔ Vuelo AA866 , Embarque de Pasajero 20451234, en la Zona 1:
+16:42 | ✔ Vuelo AA866 , Embarque de Pasajero 61345678, en la Zona 3:
+16:42 | ✔ Vuelo AA866 , Embarque de Pasajero 72123456, en la Zona 1:
+16:43 | ✔ Vuelo AA866 , Embarque de Pasajero 12345678, en la Zona 1:
+16:43 | ✔ Vuelo AA866 , Embarque de Pasajero 63165423, en la Zona 3:
+16:43 | ✔ Vuelo AA866 , Embarque de Pasajero 65345678, en la Zona 3:
+16:43 | ✅ Checkin: Pasajero 94095649, hizo check-in exitoso. Tiempo del tramite: 2 minutos
+16:43 | 🛂 Mostrador 1: Pasajero 22345678 ingresó al mostrador. Tiempo de espera: 5 minutos
+16:43 | ✔ Vuelo AA866 , Embarque de Pasajero 75345678, en la Zona 2:
+16:43 | ✈️ Carga : Capacidad: AA866 1900.00 kg | 115.00 m3
+16:44 | ✅ Carga : Vuelo AA866, Asignada: 1 items | Total: 1900.00 kg, 115.00 m3
+16:44 | ⚠️ Carga : Vuelo AA866, Fuera de la aeronave: 4 items
+16:44 | ⚠️ Despague AA866 potencialmente en conflicto con edificio entre 400.0 y 470.0 (altura: 500.0)
+16:44 | ⚠️ Salida: Vuelo INSEGURO AA866, Altura : 483 metros, esperando condiciones seguras...
+16:45 | ✈️ Salida: Vuelo Seguro AA866, Altura: 693 metros
+16:47 | ✅ Checkin: Pasajero 47287448, hizo check-in exitoso. Tiempo del tramite: 6 minutos
+16:47 | 🛂 Mostrador 1: Pasajero 67671097 ingresó al mostrador. Tiempo de espera: 6 minutos
+16:47 | ✅ Checkin: Pasajero 78123456, hizo check-in exitoso. Tiempo del tramite: 9 minutos
+16:51 | ✅ Checkin: Pasajero 67671097, hizo check-in exitoso. Tiempo del tramite: 4 minutos
+16:53 | ✅ Checkin: Pasajero 22345678, hizo check-in exitoso. Tiempo del tramite: 10 minutos
+17:05 | ✈️ Embarque: Vuelo AA855 CERRADO 
+17:05 | ✈️ Salida: Vuelo AA855 en Despegue...
+17:41 | ✈️ Embarque: Vuelo AA866 CERRADO 
+17:42 | ✈️ Salida: Vuelo AA866 en Despegue...

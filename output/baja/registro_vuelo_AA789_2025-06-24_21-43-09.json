@@ -1,0 +1,96 @@
+{
+  "numeroVuelo": "AA789",
+  "salidaProgramada": "2025-06-23T12:30:00Z",
+  "partidaReal": "2025-06-23T12:33:00Z",
+  "pasajerosEmbarcados": [
+    {
+      "ticket": "eZZvWu",
+      "dni": "34567890",
+      "prioridad": 0,
+      "llegada": "2025-06-23T11:17:00Z",
+      "zonas": 0,
+      "Index": 0
+    },
+    {
+      "ticket": "vPKIHX",
+      "dni": "75208878",
+      "prioridad": 0,
+      "llegada": "2025-06-23T11:17:00Z",
+      "zonas": 0,
+      "Index": 1
+    },
+    {
+      "ticket": "YAmfMA",
+      "dni": "21123456",
+      "prioridad": 3,
+      "llegada": "2025-06-23T11:25:00Z",
+      "zonas": 3,
+      "Index": 2
+    },
+    {
+      "ticket": "IBtW54",
+      "dni": "93430561",
+      "prioridad": 2,
+      "llegada": "2025-06-23T11:35:00Z",
+      "zonas": 2,
+      "Index": 3
+    },
+    {
+      "ticket": "bsc7LB",
+      "dni": "26901234",
+      "prioridad": 0,
+      "llegada": "2025-06-23T11:41:00Z",
+      "zonas": 0,
+      "Index": 4
+    },
+    {
+      "ticket": "cvuo9Q",
+      "dni": "40123456",
+      "prioridad": 1,
+      "llegada": "2025-06-23T11:51:00Z",
+      "zonas": 1,
+      "Index": 2
+    },
+    {
+      "ticket": "FrqdH1",
+      "dni": "94568471",
+      "prioridad": 0,
+      "llegada": "2025-06-23T11:56:00Z",
+      "zonas": 0,
+      "Index": 2
+    },
+    {
+      "ticket": "Y7zz24",
+      "dni": "43567890",
+      "prioridad": 2,
+      "llegada": "2025-06-23T12:02:00Z",
+      "zonas": 2,
+      "Index": 7
+    },
+    {
+      "ticket": "pKpWoA",
+      "dni": "54345678",
+      "prioridad": 0,
+      "llegada": "2025-06-23T12:13:00Z",
+      "zonas": 0,
+      "Index": 3
+    },
+    {
+      "ticket": "6GKpPs",
+      "dni": "44849061",
+      "prioridad": 2,
+      "llegada": "2025-06-23T12:16:00Z",
+      "zonas": 2,
+      "Index": 9
+    }
+  ],
+  "pasajerosNoPresentes": [
+    {
+      "nombre": "Valeria",
+      "apellido": "Acosta",
+      "dni": "88123456",
+      "categoria": "Platino"
+    }
+  ],
+  "listaEspera": []
+}

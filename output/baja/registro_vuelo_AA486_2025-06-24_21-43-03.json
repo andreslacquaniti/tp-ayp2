@@ -1,0 +1,97 @@
+{
+  "numeroVuelo": "AA486",
+  "salidaProgramada": "2025-06-23T10:15:00Z",
+  "partidaReal": "2025-06-23T10:20:00Z",
+  "pasajerosEmbarcados": [
+    {
+      "ticket": "LOznXV",
+      "dni": "22334455",
+      "prioridad": 2,
+      "llegada": "2025-06-23T09:02:00Z",
+      "zonas": 2,
+      "Index": 0
+    },
+    {
+      "ticket": "G3iPtV",
+      "dni": "85345678",
+      "prioridad": 3,
+      "llegada": "2025-06-23T09:10:00Z",
+      "zonas": 3,
+      "Index": 1
+    },
+    {
+      "ticket": "tbPXK4",
+      "dni": "50345678",
+      "prioridad": 0,
+      "llegada": "2025-06-23T09:17:00Z",
+      "zonas": 0,
+      "Index": 0
+    },
+    {
+      "ticket": "H7Ekpn",
+      "dni": "48345678",
+      "prioridad": 1,
+      "llegada": "2025-06-23T09:24:00Z",
+      "zonas": 1,
+      "Index": 1
+    },
+    {
+      "ticket": "bYycJ1",
+      "dni": "70320864",
+      "prioridad": 2,
+      "llegada": "2025-06-23T09:32:00Z",
+      "zonas": 2,
+      "Index": 4
+    },
+    {
+      "ticket": "rhdnBQ",
+      "dni": "83345678",
+      "prioridad": 2,
+      "llegada": "2025-06-23T09:37:00Z",
+      "zonas": 2,
+      "Index": 5
+    },
+    {
+      "ticket": "hLbNEn",
+      "dni": "84123456",
+      "prioridad": 1,
+      "llegada": "2025-06-23T09:42:00Z",
+      "zonas": 1,
+      "Index": 2
+    },
+    {
+      "ticket": "JxEppw",
+      "dni": "11223344",
+      "prioridad": 3,
+      "llegada": "2025-06-23T09:44:00Z",
+      "zonas": 3,
+      "Index": 7
+    },
+    {
+      "ticket": "dCxIA8",
+      "dni": "52908665",
+      "prioridad": 3,
+      "llegada": "2025-06-23T09:48:00Z",
+      "zonas": 3,
+      "Index": 8
+    },
+    {
+      "ticket": "D4Whoi",
+      "dni": "92123456",
+      "prioridad": 1,
+      "llegada": "2025-06-23T09:58:00Z",
+      "zonas": 1,
+      "Index": 4
+    },
+    {
+      "ticket": "CDDMWd",
+      "dni": "71568008",
+      "prioridad": 1,
+      "llegada": "2025-06-23T10:07:00Z",
+      "zonas": 1,
+      "Index": 10
+    }
+  ],
+  "pasajerosNoPresentes": [],
+  "listaEspera": []
+}

@@ -1,0 +1,89 @@
+{
+  "numeroVuelo": "AA801",
+  "salidaProgramada": "2025-06-23T10:30:00Z",
+  "partidaReal": "2025-06-23T10:37:00Z",
+  "pasajerosEmbarcados": [
+    {
+      "ticket": "tcm3CR",
+      "dni": "97994551",
+      "prioridad": 1,
+      "llegada": "2025-06-23T09:24:00Z",
+      "zonas": 1,
+      "Index": 0
+    },
+    {
+      "ticket": "K3KL8m",
+      "dni": "46345678",
+      "prioridad": 0,
+      "llegada": "2025-06-23T09:28:00Z",
+      "zonas": 0,
+      "Index": 0
+    },
+    {
+      "ticket": "yOWJs0",
+      "dni": "76123456",
+      "prioridad": 1,
+      "llegada": "2025-06-23T09:31:00Z",
+      "zonas": 1,
+      "Index": 2
+    },
+    {
+      "ticket": "Sx7lVL",
+      "dni": "98765432",
+      "prioridad": 0,
+      "llegada": "2025-06-23T09:33:00Z",
+      "zonas": 0,
+      "Index": 1
+    },
+    {
+      "ticket": "igCLCm",
+      "dni": "60123456",
+      "prioridad": 1,
+      "llegada": "2025-06-23T09:41:00Z",
+      "zonas": 1,
+      "Index": 4
+    },
+    {
+      "ticket": "6bNyXO",
+      "dni": "86123456",
+      "prioridad": 0,
+      "llegada": "2025-06-23T09:43:00Z",
+      "zonas": 0,
+      "Index": 2
+    },
+    {
+      "ticket": "YEUAbn",
+      "dni": "20756213",
+      "prioridad": 1,
+      "llegada": "2025-06-23T09:50:00Z",
+      "zonas": 1,
+      "Index": 6
+    },
+    {
+      "ticket": "nvlPt5",
+      "dni": "97345678",
+      "prioridad": 3,
+      "llegada": "2025-06-23T09:53:00Z",
+      "zonas": 3,
+      "Index": 7
+    },
+    {
+      "ticket": "yp4Mab",
+      "dni": "33123456",
+      "prioridad": 3,
+      "llegada": "2025-06-23T09:54:00Z",
+      "zonas": 3,
+      "Index": 8
+    },
+    {
+      "ticket": "CI6bFf",
+      "dni": "98123456",
+      "prioridad": 0,
+      "llegada": "2025-06-23T10:00:00Z",
+      "zonas": 0,
+      "Index": 4
+    }
+  ],
+  "pasajerosNoPresentes": [],
+  "listaEspera": []
+}

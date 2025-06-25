@@ -1,0 +1,104 @@
+{
+  "numeroVuelo": "AA811",
+  "salidaProgramada": "2025-06-23T22:45:00Z",
+  "partidaReal": "2025-06-23T22:50:00Z",
+  "pasajerosEmbarcados": [
+    {
+      "ticket": "CzN6ZC",
+      "dni": "45133768",
+      "prioridad": 3,
+      "llegada": "2025-06-23T07:25:00Z",
+      "zonas": 3,
+      "Index": 0
+    },
+    {
+      "ticket": "5lxzfS",
+      "dni": "25171411",
+      "prioridad": 1,
+      "llegada": "2025-06-23T21:35:00Z",
+      "zonas": 1,
+      "Index": 0
+    },
+    {
+      "ticket": "376fK8",
+      "dni": "86220902",
+      "prioridad": 2,
+      "llegada": "2025-06-23T21:43:00Z",
+      "zonas": 2,
+      "Index": 2
+    },
+    {
+      "ticket": "Q1YmS8",
+      "dni": "38323957",
+      "prioridad": 0,
+      "llegada": "2025-06-23T21:47:00Z",
+      "zonas": 0,
+      "Index": 0
+    },
+    {
+      "ticket": "63ctPc",
+      "dni": "95975858",
+      "prioridad": 0,
+      "llegada": "2025-06-23T21:56:00Z",
+      "zonas": 0,
+      "Index": 1
+    },
+    {
+      "ticket": "XqkOfy",
+      "dni": "45133768",
+      "prioridad": 3,
+      "llegada": "2025-06-23T22:01:00Z",
+      "zonas": 3,
+      "Index": 5
+    },
+    {
+      "ticket": "2jYKbK",
+      "dni": "89345678",
+      "prioridad": 3,
+      "llegada": "2025-06-23T22:10:00Z",
+      "zonas": 3,
+      "Index": 6
+    },
+    {
+      "ticket": "RA9S99",
+      "dni": "87654321",
+      "prioridad": 2,
+      "llegada": "2025-06-23T22:17:00Z",
+      "zonas": 2,
+      "Index": 3
+    },
+    {
+      "ticket": "qA1G55",
+      "dni": "87345678",
+      "prioridad": 2,
+      "llegada": "2025-06-23T22:25:00Z",
+      "zonas": 2,
+      "Index": 8
+    },
+    {
+      "ticket": "z34QjZ",
+      "dni": "54265548",
+      "prioridad": 3,
+      "llegada": "2025-06-23T22:32:00Z",
+      "zonas": 3,
+      "Index": 9
+    },
+    {
+      "ticket": "R5XH26",
+      "dni": "89268762",
+      "prioridad": 3,
+      "llegada": "2025-06-23T22:36:00Z",
+      "zonas": 3,
+      "Index": 10
+    }
+  ],
+  "pasajerosNoPresentes": [
+    {
+      "nombre": "Sofía",
+      "apellido": "Molina",
+      "dni": "53123456",
+      "categoria": "Plata"
+    }
+  ],
+  "listaEspera": []
+}

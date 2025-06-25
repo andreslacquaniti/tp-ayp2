@@ -1,0 +1,98 @@
+{
+  "numeroVuelo": "AA855",
+  "salidaProgramada": "2025-06-24T04:30:00Z",
+  "partidaReal": "2025-06-24T04:41:00Z",
+  "pasajerosEmbarcados": [
+    {
+      "ticket": "UxLpj3",
+      "dni": "96123456",
+      "prioridad": 1,
+      "llegada": "2025-06-23T15:11:00Z",
+      "zonas": 1,
+      "Index": 0
+    },
+    {
+      "ticket": "daBsMK",
+      "dni": "71345678",
+      "prioridad": 2,
+      "llegada": "2025-06-24T03:23:00Z",
+      "zonas": 2,
+      "Index": 1
+    },
+    {
+      "ticket": "MsNJUa",
+      "dni": "68123456",
+      "prioridad": 1,
+      "llegada": "2025-06-24T03:33:00Z",
+      "zonas": 1,
+      "Index": 2
+    },
+    {
+      "ticket": "kjPdOm",
+      "dni": "57770607",
+      "prioridad": 2,
+      "llegada": "2025-06-24T03:36:00Z",
+      "zonas": 2,
+      "Index": 3
+    },
+    {
+      "ticket": "cTvVGO",
+      "dni": "92465250",
+      "prioridad": 3,
+      "llegada": "2025-06-24T03:44:00Z",
+      "zonas": 3,
+      "Index": 4
+    },
+    {
+      "ticket": "xvD49v",
+      "dni": "47123456",
+      "prioridad": 2,
+      "llegada": "2025-06-24T03:51:00Z",
+      "zonas": 2,
+      "Index": 5
+    },
+    {
+      "ticket": "Hohtct",
+      "dni": "58345678",
+      "prioridad": 0,
+      "llegada": "2025-06-24T04:02:00Z",
+      "zonas": 0,
+      "Index": 0
+    },
+    {
+      "ticket": "XtPEJi",
+      "dni": "24678901",
+      "prioridad": 1,
+      "llegada": "2025-06-24T04:11:00Z",
+      "zonas": 1,
+      "Index": 1
+    }
+  ],
+  "pasajerosNoPresentes": [
+    {
+      "nombre": "Camila",
+      "apellido": "Torres",
+      "dni": "70123456",
+      "categoria": ""
+    },
+    {
+      "nombre": "Sergio",
+      "apellido": "Sánchez",
+      "dni": "71197153",
+      "categoria": "Plata"
+    },
+    {
+      "nombre": "Florencia",
+      "apellido": "Delgado",
+      "dni": "96123456",
+      "categoria": "Platino"
+    },
+    {
+      "nombre": "Camila",
+      "apellido": "Ruiz",
+      "dni": "37567890",
+      "categoria": "Plata"
+    }
+  ],
+  "listaEspera": []
+}

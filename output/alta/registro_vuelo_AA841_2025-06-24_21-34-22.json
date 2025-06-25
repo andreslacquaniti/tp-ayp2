@@ -1,0 +1,113 @@
+{
+  "numeroVuelo": "AA841",
+  "salidaProgramada": "2025-06-23T12:15:00Z",
+  "partidaReal": "2025-06-23T12:16:00Z",
+  "pasajerosEmbarcados": [
+    {
+      "ticket": "C96FLu",
+      "dni": "66847427",
+      "prioridad": 0,
+      "llegada": "2025-06-23T11:16:00Z",
+      "zonas": 0,
+      "Index": 0
+    },
+    {
+      "ticket": "ycZDhP",
+      "dni": "14898276",
+      "prioridad": 1,
+      "llegada": "2025-06-23T11:17:00Z",
+      "zonas": 1,
+      "Index": 2
+    },
+    {
+      "ticket": "bR1rOc",
+      "dni": "91345678",
+      "prioridad": 2,
+      "llegada": "2025-06-23T11:17:00Z",
+      "zonas": 2,
+      "Index": 1
+    },
+    {
+      "ticket": "mnUDIt",
+      "dni": "79345678",
+      "prioridad": 2,
+      "llegada": "2025-06-23T11:21:00Z",
+      "zonas": 2,
+      "Index": 4
+    },
+    {
+      "ticket": "HoHUqb",
+      "dni": "33445566",
+      "prioridad": 1,
+      "llegada": "2025-06-23T11:21:00Z",
+      "zonas": 1,
+      "Index": 1
+    },
+    {
+      "ticket": "Ulosu1",
+      "dni": "69389237",
+      "prioridad": 2,
+      "llegada": "2025-06-23T11:24:00Z",
+      "zonas": 2,
+      "Index": 5
+    },
+    {
+      "ticket": "3qjMaZ",
+      "dni": "30237009",
+      "prioridad": 1,
+      "llegada": "2025-06-23T11:29:00Z",
+      "zonas": 1,
+      "Index": 6
+    },
+    {
+      "ticket": "JhXj1s",
+      "dni": "82123456",
+      "prioridad": 0,
+      "llegada": "2025-06-23T11:33:00Z",
+      "zonas": 0,
+      "Index": 1
+    },
+    {
+      "ticket": "iJlKWX",
+      "dni": "32345678",
+      "prioridad": 1,
+      "llegada": "2025-06-23T11:40:00Z",
+      "zonas": 1,
+      "Index": 8
+    },
+    {
+      "ticket": "bhSdP1",
+      "dni": "78144735",
+      "prioridad": 2,
+      "llegada": "2025-06-23T11:42:00Z",
+      "zonas": 2,
+      "Index": 9
+    },
+    {
+      "ticket": "k4Q1OJ",
+      "dni": "15361036",
+      "prioridad": 0,
+      "llegada": "2025-06-23T11:46:00Z",
+      "zonas": 0,
+      "Index": 4
+    },
+    {
+      "ticket": "XhfRPC",
+      "dni": "82123456",
+      "prioridad": 0,
+      "llegada": "2025-06-23T11:49:00Z",
+      "zonas": 0,
+      "Index": 2
+    },
+    {
+      "ticket": "5k6OsW",
+      "dni": "93362765",
+      "prioridad": 2,
+      "llegada": "2025-06-23T11:49:00Z",
+      "zonas": 2,
+      "Index": 11
+    }
+  ],
+  "pasajerosNoPresentes": [],
+  "listaEspera": []
+}

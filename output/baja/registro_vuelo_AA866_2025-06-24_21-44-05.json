@@ -1,0 +1,112 @@
+{
+  "numeroVuelo": "AA866",
+  "salidaProgramada": "2025-06-24T06:45:00Z",
+  "partidaReal": "2025-06-24T06:54:00Z",
+  "pasajerosEmbarcados": [
+    {
+      "ticket": "b2qQr1",
+      "dni": "72123456",
+      "prioridad": 1,
+      "llegada": "2025-06-23T12:07:00Z",
+      "zonas": 1,
+      "Index": 0
+    },
+    {
+      "ticket": "jcbJWU",
+      "dni": "63165423",
+      "prioridad": 3,
+      "llegada": "2025-06-24T05:39:00Z",
+      "zonas": 3,
+      "Index": 1
+    },
+    {
+      "ticket": "WgZvPw",
+      "dni": "47287448",
+      "prioridad": 0,
+      "llegada": "2025-06-24T05:44:00Z",
+      "zonas": 0,
+      "Index": 0
+    },
+    {
+      "ticket": "EGjx2n",
+      "dni": "67671097",
+      "prioridad": 1,
+      "llegada": "2025-06-24T05:51:00Z",
+      "zonas": 1,
+      "Index": 1
+    },
+    {
+      "ticket": "80nsjA",
+      "dni": "22345678",
+      "prioridad": 0,
+      "llegada": "2025-06-24T05:56:00Z",
+      "zonas": 0,
+      "Index": 1
+    },
+    {
+      "ticket": "WF5F6L",
+      "dni": "12345678",
+      "prioridad": 1,
+      "llegada": "2025-06-24T06:01:00Z",
+      "zonas": 1,
+      "Index": 5
+    },
+    {
+      "ticket": "QBrI32",
+      "dni": "94095649",
+      "prioridad": 3,
+      "llegada": "2025-06-24T06:05:00Z",
+      "zonas": 3,
+      "Index": 6
+    },
+    {
+      "ticket": "ShmUAC",
+      "dni": "78123456",
+      "prioridad": 0,
+      "llegada": "2025-06-24T06:13:00Z",
+      "zonas": 0,
+      "Index": 3
+    },
+    {
+      "ticket": "n6TBLh",
+      "dni": "65345678",
+      "prioridad": 3,
+      "llegada": "2025-06-24T06:20:00Z",
+      "zonas": 3,
+      "Index": 8
+    },
+    {
+      "ticket": "SX8cl5",
+      "dni": "61345678",
+      "prioridad": 3,
+      "llegada": "2025-06-24T06:26:00Z",
+      "zonas": 3,
+      "Index": 9
+    },
+    {
+      "ticket": "2Av7yt",
+      "dni": "72123456",
+      "prioridad": 1,
+      "llegada": "2025-06-24T06:34:00Z",
+      "zonas": 1,
+      "Index": 10
+    },
+    {
+      "ticket": "xqCsC6",
+      "dni": "75345678",
+      "prioridad": 2,
+      "llegada": "2025-06-24T06:37:00Z",
+      "zonas": 2,
+      "Index": 11
+    }
+  ],
+  "pasajerosNoPresentes": [
+    {
+      "nombre": "Sofía",
+      "apellido": "González",
+      "dni": "20451234",
+      "categoria": "Platino"
+    }
+  ],
+  "listaEspera": []
+}
